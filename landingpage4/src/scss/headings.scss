@@ -1,0 +1,16 @@
+h1 {
+    font-size: $font-size--48;
+    font-weight: $font-weight--light;
+}
+
+h2 {
+    font-size: $font-size--40;
+    font-weight: $font-weight--light;
+    color: #2F3740;
+}
+
+.h2-font-weight--medium {
+    color: #0FA184;
+    font-size: $font-size--40;
+    font-weight: $font-weight--medium;
+}

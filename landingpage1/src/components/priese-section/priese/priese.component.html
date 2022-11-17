@@ -1,0 +1,37 @@
+<div *ngIf="cardTwoData !== null" class="priese-section">
+    <div class="container priese-section__content-container">
+        <div class="p-grid">
+            <div class="p-col-12">
+                <h2>Priese</h2>
+                <p class="section-title-text">All the available jobs in the market will show here and user can click
+                    view more to see All job list from here!</p>
+            </div>
+        </div>
+
+        <div class="p-grid ">
+            <div class="p-col-12 p-lg-6" *ngFor="let cardPrice of cardTwoData let i = index;">
+                <app-card [cardTwoData]="cardPrice" cardNumber=2></app-card>
+            </div>
+        </div>
+
+        <div class="p-grid ">
+            <div class="p-col-12 priese-section__border-top p-pt-6 p-pb-6">
+                <div class="p-d-flex">
+                    <div class="p-inputgroup p-inputgroup-custom p-jc-start">
+                        <button pButton type="button" label="Rochnen" routerLink="/register"
+                            class="p-button-secondary p-inputgroup-custom-btn"></button>
+                        <span class="p-inputgroup-addon p-button p-component p-inputgroup-custom-btn-arrow-icon">
+                            <i class="pi pi-chevron-right "></i>
+                        </span>
+                        <button pButton type="button" label="Anzeige jetzt aufgeben" routerLink="/register"
+                            class="p-button-secondary p-inputgroup-custom-btn p-ml-5"></button>
+                        <span class="p-inputgroup-addon p-button p-component p-inputgroup-custom-btn-arrow-icon">
+                            <i class="pi pi-chevron-right "></i>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

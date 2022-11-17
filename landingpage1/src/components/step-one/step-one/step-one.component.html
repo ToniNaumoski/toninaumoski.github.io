@@ -1,0 +1,49 @@
+<section class="steps steps__step-one">
+    <div class="container">
+        <div class="p-grid ">
+            <div class="p-col-12">
+
+                <p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="true"></p-steps>
+
+
+                <form [formGroup]="costForm">
+                    <div class="p-d-flex p-flex-wrap p-flex-start p-flex-row p-flex-wrap steps__step-one-form-wrapper p-mt-5">
+                        <div class="p-d-flex p-flex-column p-mr-5 p-mb-3">
+                            <label for="numberOfHelpers" class="p-mb-3 steps__label">Wie viel Helfer benötigen Sie?</label>
+                            <p-inputNumber [(ngModel)]="numberOfHelpers" aria-describedby="helperNumberHelp"
+                                id="numberOfHelpers" formControlName="numberOfHelpers" mode="decimal"
+                                [showButtons]="false" inputId="withoutgrouping" [useGrouping]="false" [min]="1" class="steps__input">
+                            </p-inputNumber>
+                        </div>
+                        <div class="p-d-flex p-flex-column p-mr-5 p-mb-3">
+                            <label for="workingHours" class="p-mb-3  steps__label">Wie viel Arbeitstunde schätzen Sie?</label>
+                            <p-inputNumber [(ngModel)]="workingHours" aria-describedby="workingTimeHelp"
+                                id="workingHours" formControlName="workingHours" mode="decimal" [showButtons]="false"
+                                inputId="withoutgrouping" [useGrouping]="false" [min]="1">
+                            </p-inputNumber>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="numberOfHelpers">Wie viel Helfer benötigen Sie?</label>
+                        <input [(ngModel)]="numberOfHelpers" aria-describedby="helperNumberHelp" class="form-control"
+                            formControlName="numberOfHelpers" id="numberOfHelpers" min="1" step="1" type="number">
+                    </div>
+                    <div class="form-group">
+                        <label for="workingHours">Wie viel Arbeitstunde schätzen Sie?</label>
+                        <input [(ngModel)]="workingHours" aria-describedby="workingTimeHelp" class="form-control"
+                            formControlName="workingHours" id="workingHours" min="1" step="1" type="number">
+
+                    </div> -->
+                    <button role="status" pButton (click)="callNextComponent()" [disabled]="!costForm.valid"
+                        routerLink="/announcement/cost/steptwo" label="Weiter">
+                    </button>
+                </form>
+                <p> Sie zahlen insgesamt {{totalCost()}} €</p>
+                <p class="small"> Arbeitlohn: {{totalWorkersFees()}} €</p>
+                <p class="small"> Vermittlungsgebühren: {{totalServiceFees()}} €</p>
+
+            </div>
+        </div>
+    </div>
+</section>

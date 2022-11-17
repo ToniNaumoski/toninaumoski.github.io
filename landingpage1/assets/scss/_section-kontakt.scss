@@ -1,0 +1,52 @@
+.section-kontakt {
+    background-color: $color-dark-blue-2;
+    color: $color-white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    &-title {
+        font-size: 48px;
+    }
+    &__img {
+        width: 243px;
+        height: 291px;
+        margin: auto;
+    }
+
+    &-info {
+
+        margin-left: 45px;
+        &__name {
+            color: $color-white;
+            font-size: 42px;
+            font-weight: $font-weight-bold;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            font-size: 21px;
+            font-weight: $font-weight-normal;
+            opacity: 0.56;
+            margin-bottom: 40px;
+
+        }
+
+        &__kontakt-phone-section {
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 5px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: $color-dark-blue4;
+
+            &-phone-icon {
+                margin-right: 40px;
+            }
+        }
+
+        &__kontakt-phone-section-text {
+            font-size: 21px;
+        }
+    }
+}

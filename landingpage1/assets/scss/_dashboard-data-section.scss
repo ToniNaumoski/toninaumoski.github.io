@@ -1,0 +1,8 @@
+.dashboard-data-section {
+    background-color: $color-sky-blue2;
+    @media (min-width: 1200px) {
+        .container {
+            min-width: 1200px;
+        }
+    }
+}

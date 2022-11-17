@@ -1,0 +1,51 @@
+.testemonials {
+    background-color: #F6F7F8;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    &__logo-wrapper {
+        margin-bottom: 14px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__logo-img {
+       height: 30px;
+    }
+
+    &__star-rating-wrapper {
+        margin-bottom: 22px;
+    }
+
+    &__star-rating-text {
+        font-family: $font-family--primary;
+        font-size: $font-size--22;
+        color: #76808B;
+        font-weight: $font-weight--heavy;
+        margin-top: -8px;
+        margin-left: 8px;
+        margin-bottom: 0;
+    }
+
+
+    &__star-rating-full {
+          background: url(./../assets/icn_star_rating_full.svg);
+          background-repeat: no-repeat;
+          width: 18px;
+          height: 17px;
+          margin-right: 4px;
+    }
+
+    &__star-rating-empty {
+        background: url(./../assets/icn_star_rating_empty.svg);
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 17px;
+        margin-right: 4px;
+  }
+
+  &__text {
+      font-family: $font-family--primary;
+      font-weight: $font-weight--light;
+      font-size: $font-size--14;
+  }
+}

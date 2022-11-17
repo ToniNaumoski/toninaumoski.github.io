@@ -1,0 +1,43 @@
+// bootstrap override 
+// $theme-colors: (
+//   "custom-color": #FFFFFF,
+//   "custom-color2": #303841,
+//   "custom-color3": #FFFFFF00,
+//   "custom-color4": #10C7A2,
+//   "custom-color5": #76808B,
+//   "custom-color6": #0FA184,
+//   "custom-color7": #5C656F,
+//   "custom-color8": #4D4D4D,
+//   "custom-color9": #0BB9A3,
+//   "custom-color10": #2F3740,
+//   "custom-color11": #0000000F,
+//   "custom-color12": #EFEFEF,
+//   "custom-color13": #5489B5,
+//   "custom-color14": #ADC9E1,
+//   "custom-color15": #184A4B,
+//   "custom-color16": #0EA185,
+//   "custom-color17": #00000080,
+//   "custom-color18": #FFC300,
+//   "custom-color19": #F9F9F9,
+//   "custom-color20": #EDEDED,
+//   "custom-color21": #00000029,
+//   "custom-color22": #10BE9B,
+//   "custom-color23": #707070,
+//   "custom-color24": #FFFFFF33,
+//   "custom-color25": #EEEEEE,
+// );
+
+$theme-colors: (
+  "primary": #0FA184,
+  "secondary": #ffffff
+);
+
+$body-bg: #ffffff;
+
+// missing bootstrap font-weight
+.font-weight-medium {
+  font-weight: 500;
+} 
+
+
+@import "./../../node_modules/bootstrap/scss/bootstrap.scss";

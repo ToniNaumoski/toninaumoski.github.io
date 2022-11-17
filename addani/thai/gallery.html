@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Adaani-Gallery</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--Load jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<!--Load jQuery Ui-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+	<!--FANCYBOX PLUGIN-->
+	<link href="js/fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<link href="js/fancybox/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css">
+	<link href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+	<!--Load Main css-->
+	<link href="css/galery.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+	<div id="header">
+		<div id="header-left">
+			<img id="logo-div" src="images/Adaani-Logo.png" alt="Logo-Img" />
+			<a href="https://www.facebook.com/adaani"> <img class="social-media-shadow" src="images/facebook.png"
+					title="Facebook" alt="facebook" /></a>
+			<a href="https://twitter.com/adaaniproducts"> <img class="social-media-shadow" src="images/twitter.png"
+					title="Twitter" alt="twitter" /></a>
+			<img class="social-media-shadow" src="images/google.png" title="Goolge+" alt="google" />
+			<a href="https://www.pinterest.com/adaani"><img class="social-media-shadow" src="images/pinterest.png"
+					title="Goolge+" alt="google" /></a>
+			<img class="social-media-shadow" src="images/flicker.png" title="Flicker" alt="flicker" />
+			<img class="social-media-shadow" src="images/skype.png" title="Skype" alt="skype" />
+		</div><!-- END OF HEADER LEFT -->
+
+		<div id="header-right">
+			<img id="appstore" src="images/appstore.png" alt="appstore" />
+			<a href="https://itunes.apple.com/us/app/adaani/id689555560?mt=8"> <img id="playstore" src="images/playstore.png"
+					alt="playstore" /></a>
+		</div>
+		<!--END OF HEADER RIGHT-->
+		<div id="header-menu">
+			<ul id="menu-ul">
+				<li><a id="language" href="../index.html">
+						<img src="images/english.png" alt="home" /><br />
+						ภาษา</a>
+				</li>
+				<li><a id="home" href="index.html">
+						<img src="images/light.png" alt="home" /><br />
+						บ้าน</a>
+				</li>
+				<li><a id="products" href="products.html">
+						<img src="images/product-light.png" alt="home" /><br />
+						สินค้าของเรา
+					</a>
+
+				</li>
+				<li><a id="galery" href="gallery.html">
+						<img src="images/galery-light.png" alt="home" /><br />
+						แกลอรี่
+					</a>
+
+
+				</li>
+				<li><a id="aboutus" href="aboutus.html">
+						<img src="images/aboutus-light.png" alt="home" /><br />
+						เกี่ยวกับเรา
+					</a>
+
+
+				</li>
+				<li><a id="contactus" href="contactus.html">
+						<img src="images/contactus-light.png" alt="home" /><br />
+						ติดต่อเรา
+					</a>
+
+				</li>
+
+				<li><a id="findus" href="findus.html">
+						<img src="images/globe-light.png" alt="home" /><br />
+						มองหาเราได้ที่
+					</a>
+        </li>
+			</ul>
+			<!--END OF MENU UL-->
+		</div>
+		<!--END OF HEADER MENU-->
+
+		<!--<div id="header-banner">
+        	
+        </div>-->
+		<!--END OF HEADER BANNER-->
+
+		<div id="header-slider-left">
+			<button id="left-arrow" data-direction="prev"><img src="images/arrow-left.png" alt="left-arrow" /></button>
+			<div id="left-arrow"></div>
+			<div id="products-enter-wrapper">
+				<div class="products-enter">
+					<a href="images/gallery/large1.jpg" class="fancybox" data-fancybox-group="gallery"><img
+							src="images/models-thumbnails.png" alt="products" />
+					</a>
+				</div>
+				<!--END OF PRODUCT ENTER-->
+				<div class="products-enter">
+					<a href="images/gallery/large2.jpg" class="fancybox" data-fancybox-group="gallery"> <img
+							src="images/models-thumbnails1.png" alt="products" />
+					</a>
+				</div>
+				<!--END OF PRODUCT ENTER-->
+				<div class="products-enter">
+					<a href="images/gallery/large3.jpg" class="fancybox" data-fancybox-group="gallery">
+						<img src="images/models-thumbnails2.png" alt="products" />
+					</a>
+				</div>
+				<!--END OF PRODUCT ENTER-->
+				<div class="products-enter">
+					<a href="images/gallery/large4.jpg" class="fancybox" data-fancybox-group="gallery">
+						<img src="images/models-thumbnails3.png" alt="products" />
+					</a>
+				</div>
+				<!--END OF PRODUCT ENTER-->
+				<div class="products-enter">
+					<a href="images/gallery/large5.jpg" class="fancybox" data-fancybox-group="gallery">
+						<img src="images/models-thumbnails4.png" alt="products" />
+					</a>
+				</div>
+				<!--END OF PRODUCT ENTER-->
+				<div class="products-enter">
+					<a href="images/gallery/large6.jpg" class="fancybox" data-fancybox-group="gallery">
+						<img src="images/models-thumbnails5.png" alt="products" />
+					</a>
+				</div>
+				<!--END OF PRODUCT ENTER-->
+				<div class="products-enter">
+					<a href="images/gallery/large7.jpg" class="fancybox" data-fancybox-group="gallery">
+						<img src="images/models-thumbnails6.png" alt="products" />
+					</a>
+				</div>
+				<!--END OF PRODUCT ENTER-->
+			</div>
+			<!--END OF PRODUCT ENTER WRAPPER-->
+			<button id="right-arrow" data-direction="next"><img src="images/arrow-right.png" alt="arrow-right" /></button>
+		</div>
+		<!--END OF HEADER SLIDER LEFT-->
+		<div id="header-baner-right">
+			<h2>แกลอรี่</h2>
+			<div class="scroll-wrapper">
+				<div class="scroll1">
+					<h3>
+						อดานี่
+						<br /> <br />
+						เราเข้าใจความงาม
+						<br /> <br />
+						อดานี่ มีภาพของผู้หญิงสวย เราได้มาจากคนที่รักในอดานี่ ผลิตภัณฑ์ที่ดูแลผิว
+						รับประกันว่าอ่อนโยนที่แม้แต่ที่สำคัญที่สุดของสภาพผิว
+						และน้ำหอมที่น่าตื่นตาตื่นใจของเรา</h3>
+				</div><!--	END OF SCROLL1-->
+				<div class="scroll1">
+					<h3>ทีมงานที่ปรึกษาของอดานี่
+						ทุ่มเทมุ่งมั่นที่จะสร้างผลิตภัณฑ์ชั้นนำของอุตสาหกรรมที่จะทำให้คุณรู้สึกใด้บนโลกนี้
+						<br /> <br />
+						ในความเร่งรีบและคึกคักของโลกปัจจุบันความต้องการที่กำลังมองหาสิ่งที่ดี ที่ต้องใช้ความพยายาม
+						และเราหวังว่าอัลบั้มนี้จะแสดงให้คุณได้เห็นเพียงแค่มุมเล็ก ๆ ของโลก อดานี่ของเรา
+					</h3>
+					<br /> <br />
+				</div><!--	END OF SCROLL1-->
+			</div>
+			<!--END OF SCROLL WRAPPER-->
+		</div>
+		<!--END OF HEADER BANNER RIGHT-->
+	</div>
+	<!--END OF HEADER-->
+	<div id="footer">
+		<ul id="footer-menu-ul">
+			<li><a href="index.html"> บ้าน</a></li>
+			<li><a href="products.html">สินค้าของเรา</a></li>
+			<li><a href="gallery.html">แกลอรี่</a></li>
+			<li><a href="news.html">ข่าวสาร</a></li>
+			<li><a href="video.html"> วีดีโอ</a></li>
+			<li><a href="aboutus.html">เกี่ยวกับเรา</a></li>
+			<li><a href="contactus.html"> ติดต่อเรา</a></li>
+			<li><a href="findus.html">มองหาเราได้ที่ </a></li>
+		</ul>
+		<p>©Adaani Inc. All rights reserved</p>
+	</div>
+	<!--end of footer-->
+	<script type="text/javascript">
+		$('#header-slider-left').hover(function () {
+			$("#left-arrow").show("slide", 350);
+			$("#right-arrow").show("slide", { direction: 'right' }, 250);
+		}, function () {
+			$("#left-arrow").hide("slide", 80);
+			$("#right-arrow").hide("slide", { direction: 'right' }, 80);
+		});
+
+		$(window).load(
+			function () {
+
+				(function ($) {
+					var sliderUl = $('#products-enter-wrapper'),
+						imgs = $('.products-enter '),
+						imgWidth = imgs.first().width(),
+						imgsLen = imgs.length,
+						current = 1,
+						/*console.log(loc);*/
+						totalImgsWidth = imgsLen * imgWidth;
+					$('#header-slider-left').find('button').click(function () {
+						var direction = $(this).data('direction'),
+							loc = imgWidth;
+						if (direction === 'next') {
+							current = current + 1;
+						}
+						else {
+							current = current - 1;
+						}
+
+						//if first imafe
+						if (current === 0) {
+							current = imgsLen;
+							loc = totalImgsWidth - imgWidth;
+							direction = 'next';
+						} else if (current - 1 === imgsLen) {
+							current = 1;
+							loc = 0;
+						}
+
+						transition(sliderUl, loc, direction);
+
+					});
+
+					function transition(container, loc, direction) {
+						var unit;
+						if (direction && loc !== 0) {
+							unit = (direction === 'next') ? '-=' : '+=';
+
+						}
+						container.animate({
+							'margin-left': unit ? (unit + loc) : loc
+						});
+
+					}
+				})(jQuery);
+
+
+				$(".fancybox").fancybox({
+					openEffect: 'none',
+					closeEffect: 'none',
+
+					helpers: {
+						title: {
+							type: 'over'
+						}
+					}
+				});
+
+
+			}
+		);
+	</script>
+	<script type="text/javascript" src="js/cycle/cycle.js"></script>
+	<script type="text/javascript">
+		$('.scroll-wrapper').cycle({
+			fx: 'fade',
+			timeout: 5000,
+			speed: 1000
+		});
+	</script>
+</body>
+
+</html>

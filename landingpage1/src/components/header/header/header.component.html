@@ -1,0 +1,133 @@
+<!-- old header links
+<header class="header">
+    <nav *ngIf="page ==''" class="header__menu-primary">
+        <div class="container">
+            <div class="p-grid ">
+                <div class="p-col-12">
+                    <div class="p-d-flex p-flex-wrap p-flex-column p-flex-md-row p-jc-end p-ai-center">
+                        <div class="header__menu-primary-logo-wrapper p-mr-md-auto">
+                            <img src="assets/logo.svg" alt="logo" />
+                        </div>
+                        <ul class="header__menu-primary-items-ul p-d-flex p-pl-0  p-mr-md-0">
+                            <li>
+                                <a routerLink="/">Dienstleitungen</a>
+                            </li>
+                            <li>
+                                <a routerLink="/">Preise</a>
+                            </li>
+                            <li>
+                                <a routerLink="/">FAQ</a>
+                            </li>
+                            <li>
+                                <a routerLink="/">Kontakt</a>
+                            </li>
+                        </ul>
+                        <div class="header__menu-primary-btn-items p-mr-md-0">
+                            <button pButton type="button" label="Kostenlose Registrierung"
+                                class="header__menu-primary-btn-items-registrierung"></button>
+                            <button pButton type="button" label="Einloggen" class="p-button-secondary"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav *ngIf="page =='dashboard'" class="header__menu-primary header__menu-primary-dashboard">
+        <div class="container">
+            <div class="p-grid ">
+                <div class="p-col-12">
+                    <div class="p-d-flex p-flex-wrap p-flex-column p-flex-md-row p-jc-end p-ai-center">
+                        <div class="header__menu-primary-logo-wrapper p-mr-md-auto">
+                            <img src="assets/logo.svg" alt="logo" />
+                        </div>
+                        <div class="header__menu-primary-btn-items p-d-flex p-mr-md-0">
+                            <button pButton type="button" label="Kostenlose Registrierung"
+                                class="header__menu-primary-btn-items-registrierung"></button>
+                            <img class="header__menu-primary-dashboard-person-img" src="assets/dashboard-header-img.png" alt="dashboard-header-img" />
+                            <div class="header__menu-primary-dashboard__person-info-name-and-role-wrapper p-d-flex p-flex-column p-ml-3 p-mr-3">
+                                <p class="header__menu-primary-dashboard__person-info-name">
+                                    Matthew Smiaro
+                                </p>
+                                <p class="header__menu-primary-dashboard__person-info-role">
+                                    Super Admin
+                                </p>
+                            </div>
+                            <p-splitButton label="" icon="pi pi-ellipsis-v" [model]="items" styleClass="p-button-secondary"></p-splitButton>
+
+                            </!-- <span class="p-inputgroup-addon p-button p-component p-button-secondary header__menu-primary-dashboard__person-button">
+                                <i class="pi pi-ellipsis-v"></i>
+                            </span> --/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header> -->
+<header class="header">
+    <nav *ngIf="page ==''" class="header__menu-primary">
+        <div class="container">
+            <div class="p-grid ">
+                <div class="p-col-12">
+                    <div class="p-d-flex p-flex-wrap p-flex-column p-flex-md-row p-jc-end p-ai-center">
+                        <div class="header__menu-primary-logo-wrapper p-mr-md-auto">
+                            <img src="assets/logo.svg" alt="logo" />
+                        </div>
+                        <ul class="header__menu-primary-items-ul p-d-flex p-pl-0  p-mr-md-0">
+                            <li>
+                                <a routerLink="/">Zuhause</a>
+                            </li>
+                            <li>
+                                <a routerLink="/dashboard">Instrumententafel</a>
+                            </li>
+                            <li>
+                                <a routerLink="/announcement/cost">Ankündigung</a>
+                            </li>
+                        </ul>
+                        <div class="header__menu-primary-btn-items p-mr-md-0">
+                            <button pButton type="button" label="Kostenlose Registrierung"
+                                class="header__menu-primary-btn-items-registrierung" routerLink="/register"></button>
+                            <button pButton type="button" label="Einloggen" routerLink="/account" class="p-button-secondary"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav *ngIf="page =='dashboard'" class="header__menu-primary header__menu-primary-dashboard">
+        <div class="container">
+            <div class="p-grid ">
+                <div class="p-col-12">
+
+                    <div class="p-d-flex p-flex-wrap p-flex-column p-flex-md-row p-jc-end p-ai-center">
+                        <div class="header__menu-primary-logo-wrapper p-mr-md-auto">
+                            <img src="assets/logo.svg" alt="logo" />
+                        </div>
+                        <div class="header__menu-primary-btn-items p-d-flex p-mr-md-0">
+                            <button pButton type="button" label="Zuhause"
+                            class="header__menu-primary-btn-items-registrierung p-d-none p-d-lg-block" routerLink="/"></button>
+                            <button pButton type="button" label="Ankündigung"
+                            class="header__menu-primary-btn-items-registrierung p-d-none p-d-lg-block" routerLink="/announcement/cost"></button>
+                            <button pButton type="button" label="Kostenlose Registrierung"
+                                class="header__menu-primary-btn-items-registrierung"></button>
+                            <img class="header__menu-primary-dashboard-person-img" src="assets/dashboard-header-img.png" alt="dashboard-header-img" />
+                            <div class="header__menu-primary-dashboard__person-info-name-and-role-wrapper p-d-flex p-flex-column p-ml-3 p-mr-3">
+                                <p class="header__menu-primary-dashboard__person-info-name">
+                                    Matthew Smiaro
+                                </p>
+                                <p class="header__menu-primary-dashboard__person-info-role">
+                                    Super Admin
+                                </p>
+                            </div>
+                            <p-splitButton label="" icon="pi pi-ellipsis-v" [model]="items" styleClass="p-button-secondary"></p-splitButton>
+
+                            <!-- <span class="p-inputgroup-addon p-button p-component p-button-secondary header__menu-primary-dashboard__person-button">
+                                <i class="pi pi-ellipsis-v"></i>
+                            </span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

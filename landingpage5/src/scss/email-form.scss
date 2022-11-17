@@ -1,0 +1,67 @@
+.email-form {
+    padding-top: 60px;
+    &__form {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    font-family: $font-family--primary;
+    background-color: #ffffff;
+    &__wrapper {
+        background: #303841 0% 0% no-repeat padding-box;
+        border-radius: 16px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    
+    }
+
+    &__header-text {
+        font-weight: $font-weight--medium;
+        font-size: $font-size--18;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__checkbox-text {
+        font-size: $font-size--13;
+        color: #FFFFFF;
+    }
+
+    &__checkbox {
+        margin-right: 8px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) {  
+    .email-form {
+            &__form-elements {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            &__checkbox {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: row;            
+            }
+        }
+
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .email-form {
+        &__form-elements {
+            flex-direction: row;  
+        }
+
+        &__checkbox {
+            justify-content: flex-end;
+        }
+    }
+}

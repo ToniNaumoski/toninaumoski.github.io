@@ -1,0 +1,52 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// button and arrow classs
+.p-inputgroup-custom {
+  
+    &-btn {
+        border-radius: 0 !important;
+        border-radius: 5px 0px 0px 5px !important; 
+        &-arrow-icon {
+            border-radius:  0px 5px 5px 0px !important; 
+        }
+    }
+ }
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+      
+    }
+}
+
+
+
+
+
+

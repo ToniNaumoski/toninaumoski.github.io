@@ -1,0 +1,100 @@
+.main { width:965px; margin:0 auto; position:relative; z-index:2}
+#header {width:100%; overflow:hidden;}
+#content{
+	width:100%;
+	overflow:hidden;
+	background: url(images/bg_content.png) repeat;
+	margin-top:21px;
+}
+#footer {
+	height:80px;
+	background-repeat: repeat-x;
+	background-image: url(images/bg_bot.png);
+}
+#page2 .main #flashzafuter #FlashID {
+	margin-right: 111px;
+}
+#page2 .main #flashzafuter #FlashID {
+	margin-left: 100px;
+}
+
+#page2 .main #flashzafuter {
+	width: 925px;
+	padding-right: 20px;
+	padding-left: 20px;
+	background-color: rgba(0,0,0,0.0);
+	background-image: url(images/bg_bot.png);
+	background-repeat: repeat-x;
+	padding-top: 40px;
+}
+
+
+.wrapper {
+	width:100%;
+	overflow:hidden;
+}
+#page1 .main #header .wrapper #logowrapper {
+	background-color: rgba(0,0,0,0.7);
+	height: 220px;
+	width: 965px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 17px;
+}
+
+
+.left{ float:left;}
+.right{
+	float:right;
+}
+
+.col1{
+	width:965px;
+	background-color: rgba(0,0,0,1);
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+.cols{ width:416px; float:left;}
+
+
+/* ============================= page1 ===========================*/
+html, #page1, #page1 .main{ height:100%}
+#page1 #footer{ position:absolute; bottom:0; z-index:2;}
+/* ============================= page2 ===========================*/
+#page2 .button:hover{
+	background:#f55904;
+	text-align: center;
+}
+/* ============================= page3 ===========================*/
+#page3 .button:hover{ background:#ff972d}
+/* ============================= page4 ===========================*/
+#page4 .button:hover{ background:#ffc84a}
+/* ============================= page5 ===========================*/
+#page5 .button:hover{ background:#aaad3f}
+/* ============================= page6 ===========================*/
+#page6 .button:hover{ background:#2b6e3b}
+#page6 .cols{ width:190px;}
+/* ============================= page7 ===========================*/
+#page7 .col1{ width:870px;}
+#page3 .main #flashfoter2strana #FlashID2 {
+	margin-left: 120px;
+}
+#page6 .main #contentwrapper #slikawrapper img {
+	padding: 5px;
+}
+#page6 .main #contentwrapper #tekstwrapper h3 {
+	text-align: center;
+	padding-right: 20px;
+}
+#page6 .main #flashfooter {
+	background-color: rgba(0,0,0,0.6);
+	width: 850px;
+	height: 90px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(images/bg_content.png);
+	background-repeat: repeat-x;
+	padding-left: 115px;
+	padding-top: 70px;
+}

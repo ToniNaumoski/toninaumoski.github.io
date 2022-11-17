@@ -1,0 +1,61 @@
+<section class="register-section">
+  <div class="container">
+    <div class="p-grid ">
+      <div class="p-col-12">
+        <h2>REGISTRIERUNG</h2>
+      </div>
+      <div class="p-col-12 p-offset-0 p-lg-offset-4 p-lg-4">
+        <form [formGroup]="registrationForm">
+          <div class="form-group p-d-flex p-flex-column p-jc-center p-ai-center">
+            <label for="fullName" class="form__label">Vor- und Nachname</label>
+            <input pInputText aria-describedby="fullNameHelp" class="form-control" formControlName="fullName" id="fullName"
+              placeholder="" type="text">
+            <small *ngIf="registrationForm.get('fullName').invalid  &&  registrationForm.get('fullName').touched"
+              class="form-text text-muted" id="fullNameHelp">Bitte Geben Sie Ihre Vor- und Nachname ein.</small>
+          </div>
+
+          <div class="form-group p-d-flex p-flex-column p-jc-center p-ai-center">
+            <label for="emailAddress" class="form__label">Email Adresse</label>
+            <input pInputText aria-describedby="emailHelp" class="form-control" formControlName="emailAddress" id="emailAddress"
+              placeholder="" type="email">
+            <small *ngIf="registrationForm.get('emailAddress').invalid  && registrationForm.get('emailAddress').touched"
+              class="form-text text-muted" id="emailHelp">Bitte Geben sie eine gültige Email-Adresse ein.</small>
+          </div>
+
+          <div class="form-group p-d-flex p-flex-column p-jc-center p-ai-center">
+            <label for="mobileNumber" class="form__label">Mobile Nummer</label>
+            <input pInputText aria-describedby="mobileNumberHelp" class="form-control" formControlName="mobileNumber"
+              id="mobileNumber" placeholder="" type="text">
+            <small *ngIf="registrationForm.get('mobileNumber').invalid  && registrationForm.get('mobileNumber').touched"
+              class="form-text text-muted" id="mobileNumberHelp">Bitte Geben sie eine gültige Handynummer ein.</small>
+          </div>
+
+          <div class="form-group p-d-flex p-flex-column p-jc-center p-ai-center">
+            <label for="password" class="form__label">Passwort</label>
+            <input pPassword aria-describedby="passwordHelp" class="form-control" formControlName="password" id="password"
+              placeholder="" type="password"  [feedback]=false>
+            <small *ngIf="registrationForm.get('password').invalid && registrationForm.get('password').touched"
+              class="form-text text-muted" id="passwordHelp">Passwort muss aus mindestens 6 Characters, 1 Zahl, 1 Klein-
+              und 1 Großbuchstabe bestehen.</small>
+          </div>
+
+          <div class="form-group p-field-checkbox">
+            <p-checkbox class="form-check-input" formControlName="consentApproved"  binary="true" inputId="consentApproved" type="checkbox"></p-checkbox>
+            <label for="consentApproved" >Ich akzeptiere die allgemeine
+              Geschäftsbedingungen</label>
+          </div>
+
+          <button pButton (click)="submitRegistration()" [disabled]="!registrationForm.valid"
+            type="button" label="Submit">  
+          </button>
+          <span *ngIf="submitting" aria-hidden="true" class="spinner-border spinner-border-sm" role="status"></span>
+
+          <div>
+            Haben bereits ein Konto? Hier können Sie sich direkt<a class="btn btn-link" routerLink="/account/login"
+              type="button">anmelden</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

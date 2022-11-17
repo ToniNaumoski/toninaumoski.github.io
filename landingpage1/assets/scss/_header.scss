@@ -1,0 +1,79 @@
+
+    .header {
+        background-color: $color-sky-blue2;
+        &__menu-primary {
+            font-size: 18px;
+            font-weight: $font-weight-medium;
+        &-items-ul {
+          list-style-type: none;
+          & a {
+              text-decoration: none;
+              color: $color-dark-blue-2;
+              margin-right: 20px;
+          }
+        }
+
+        &-btn-items {
+            & .p-button-label {
+                font-size: 18px;
+                font-weight: $font-weight-medium;
+            }
+            &-registrierung {
+                margin-right: 15px;
+            }
+        }
+    }
+    
+    // dashboard menu
+    &__menu-primary-dashboard {
+        background-color: $color-white;
+        &-person-img {
+            width: 51px;
+            height: 51px;
+        }
+
+        &__person-info-name {
+            margin: 0px 0px 10px 0px;
+            padding: 0;
+            font-family: $font-family-secondary;
+            font-weight: $font-weight-medium;
+            font-size: 18px;
+        }
+
+        &__person-info-role {
+            margin: 0;
+            padding: 0;
+            font-weight: $font-weight-normal;
+            font-size: 14px;
+        }
+
+        &__person-button {
+            min-width: 27px;
+            width: 27px;
+        }
+
+        .p-splitbutton-defaultbutton.p-button.p-component.p-button-icon-only {
+            display: none;
+        }
+
+        .p-button-secondary.p-splitbutton.p-component {
+            min-width: 27px;
+            width: 27px;
+        }
+
+        .p-menu.p-menu-overlay {
+            right: 0 !important;
+            left: auto !important;
+            top: 56px !important;
+        }
+
+        .p-splitbutton-menubutton.p-button.p-component.p-button-icon-only {
+            .p-button-icon.pi.pi-chevron-down::before {
+                content: "\e950";
+            }
+        }
+    }
+}
+
+
+

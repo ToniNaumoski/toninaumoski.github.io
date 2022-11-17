@@ -1,0 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@font-face {
+    font-family: 'Skyer';
+    src: url('./../fonts/Skyer-Regular.eot');
+    src: url('./../fonts/Skyer-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Skyer-Regular.woff2') format('woff2'),
+        url('./../fonts/Skyer-Regular.woff') format('woff'),
+        url('./../fonts/Skyer-Regular.ttf') format('truetype'),
+        url('./../fonts/Skyer-Regular.svg#Skyer-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,40 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 1px) {
+
+    html {
+        /* default font size of 1 rem = 10px*/
+        font-size: 100%; 
+      }
+
+
+    /* grid layout for small devices*/
+    #page-wrapper {
+        display: grid;
+        grid-template-areas:
+        'name-section'
+        'about-section'
+        'projects-section'
+        'job-history-section' 
+        'skills-section';
+        grid-template-columns: 1fr;
+        padding: 0 20px 20px 20px;
+        grid-row-gap: 10px;
+    }
+
+    #about, #skills {
+        min-height: 100vh;
+    }
+
+    .project-article {
+        justify-content: center;
+    }
+
+    .project-description {
+        line-height: 50px;
+      }
+    
+    /* scroll svg pointer*/
+    .scroll-svg-pointer {
+        display: none;
+    }
+  }

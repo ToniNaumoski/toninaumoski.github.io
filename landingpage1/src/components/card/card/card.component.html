@@ -1,0 +1,35 @@
+<p-card *ngIf="cardOneData !== null || cardNumber == null" [header]="cardOneData.title"
+    styleClass="ui-card-shadow custom-card">
+    <p-header>
+        <!-- <img alt="Card" src="YOUR_IMAGE_PATH"> -->
+        <img [src]=cardOneData.image alt="aktuell-img" />
+    </p-header>
+    <p class="custom-card__text">{{cardOneData.text}}</p>
+
+    <div class="custom-card__info-location p-d-flex p-jc-start p-flex-wrap">
+        <div *ngFor="let buttonsInfoLabels of cardOneData.buttonsInfoLabels;">
+            <button pButton type="button" [label]="buttonsInfoLabels" class="p-button-info">
+            </button>
+        </div>
+    </div>
+
+    <p-footer>
+        <div class="p-inputgroup p-inputgroup-custom p-jc-center p-jc-xl-start">
+            <button pButton type="button" [label]="cardOneData.buttonLabel" [routerLink]=cardOneData.buttonLink
+                class="p-button-secondary p-inputgroup-custom-btn"></button>
+            <span class="p-inputgroup-addon p-button p-component p-inputgroup-custom-btn-arrow-icon">
+                <i class="pi pi-chevron-right "></i>
+            </span>
+        </div>
+    </p-footer>
+</p-card>
+
+<p-card *ngIf="cardTwoData !== null || cardNumber == 2" [header]="cardTwoData.title"
+    styleClass="ui-card-shadow custom-card custom-card-2">
+    <p-header>
+        <img [src]=cardTwoData.image alt="aktuell-img" />
+    </p-header>
+    <p class="custom-card__description">{{cardTwoData.description}}</p>
+    <p class="custom-card__text custom-card-2__text">{{cardTwoData.text}}</p>
+
+</p-card>

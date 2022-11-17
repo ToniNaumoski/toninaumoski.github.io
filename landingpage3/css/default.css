@@ -1,0 +1,101 @@
+/* ------ mobilyslider
+-----------------------------------------------*/
+
++++++++++++++++#content {
+	width: 300px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+.slider {
+	float: left;
+	width: 340px;
+	height: 340px;
+	position: relative;
+	padding-bottom: 26px;
+	background: url(../gfx/bottom_shadow.png) no-repeat bottom center;
+}
+
+.sliderContent {
+	float: left;
+	width: 340px;
+	height: 340px;
+	clear: both;
+	position: relative;
+	overflow: hidden;
+}
+
+.sliderArrows a {
+display:block;
+text-indent:-9999px;
+outline:none;
+z-index:50;
+background-image:url(../gfx/prev_next.png);
+width:42px;
+height:42px;
+position:absolute;
+top:50%;
+margin-top:-34px;
+}
+
+.prev {
+background-position:0 0;
+left:15px;
+}
+
+.next:hover {
+background-position:-44px -44px;
+}
+
+.prev:hover {
+background-position:0 -44px;
+}
+
+.next {
+right:15px;
+background-position:-44px 0;
+}
+
+.sliderContent .item {
+	position: absolute;
+	width: 600px;
+	height: 350px;
+	background: #fff;
+}
+
+.sliderBullets {
+position:absolute;
+bottom:0;
+left:50%;
+z-index:50;
+margin-left:-45px;
+}
+
+.sliderBullets a {
+display:block;
+float:left;
+text-indent:-9999px;
+outline:none;
+margin-left:5px;
+width:10px;
+height:11px;
+background:url(../gfx/bullets.png) no-repeat;
+}
+
+.sliderBullets .active {
+background-position:0 -11px;
+}
+
+.sliderContent a {
+outline:none;
+}
+
+a {
+color: #999999;
+}
+
+a img {
+border:none;
+}

@@ -1,0 +1,371 @@
+.p-button {
+    background: $color-orange-1;
+    border: none;
+    border-radius: 5px;
+    &:enabled:active {
+      background: $color-orange-1;
+    }
+    &:focus {
+        box-shadow: none; 
+        background: $color-orange-1;
+    }
+    &:enabled:focus {
+        background: $color-orange-1;   
+    }
+    &:enabled:hover {
+        background: $color-orange-1;  
+    }
+}
+
+.p-button.p-button-secondary, .p-buttonset.p-button-secondary > .p-button, .p-splitbutton.p-button-secondary > .p-button {
+    background: $color-dark-blue-2;
+    border: none;
+    border-radius: 5px;
+    &:enabled:active {
+      background: $color-dark-blue-2;
+    }
+    &:focus {
+        box-shadow: none; 
+        background: $color-dark-blue-2;
+    }
+    &:enabled:focus {
+        background: $color-dark-blue-2;   
+    }
+    &:enabled:hover {
+        background: $color-dark-blue-2;  
+    }
+}
+
+.p-button.p-button-info, .p-buttonset.p-button-info > .p-button, .p-splitbutton.p-button-info > .p-button {
+    background: $color-gray-1;
+    border: none;
+    border-radius: 5px;
+    &:enabled:active {
+      background: $color-gray-1;
+    }
+    &:focus {
+        box-shadow: none; 
+        background: $color-gray-1;
+    }
+    &:enabled:focus {
+        background: $color-gray-1;   
+    }
+    &:enabled:hover {
+        background: $color-gray-1;  
+    }
+}
+
+.p-button.p-button-help, .p-buttonset.p-button-help > .p-button, .p-splitbutton.p-button-help > .p-button {
+    background: $color-white;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid  rgba($color: #000000, $alpha: 0.4);
+    color: rgba($color: #000000, $alpha: 0.4);
+    &:enabled:active {
+      background: $color-white;
+      color: rgba($color: #000000, $alpha: 0.4);
+      border: 1px solid  rgba($color: #000000, $alpha: 0.4);
+
+    }
+    &:focus {
+        box-shadow: none; 
+        background: $color-white;
+        color: rgba($color: #000000, $alpha: 0.4);
+        border: 1px solid  rgba($color: #000000, $alpha: 0.4);
+
+    }
+    &:enabled:focus {
+        background: $color-white;
+        color: rgba($color: #000000, $alpha: 0.4);
+        border: 1px solid  rgba($color: #000000, $alpha: 0.4);
+
+    }
+    &:enabled:hover {
+        background: $color-white;
+        color: rgba($color: #000000, $alpha: 0.4);
+        border: 1px solid  rgba($color: #000000, $alpha: 0.4);
+
+    }
+}
+
+.p-component {
+    font-family: 'Poppins', sans-serif;
+}
+
+.p-accordion-tab.p-accordion-tab-active p-accordiontab .p-accordion-header .p-accordion-header-link {
+    background-color: red;
+
+}
+
+.p-accordion .p-accordion-tab.p-accordion-tab-active {
+    & .p-accordion-content {
+        background-color: $color-dark-blue-2;
+        color: $color-white;
+    }
+
+    & .p-accordion-header.p-highlight:hover {
+        background-color: $color-dark-blue-2;
+        color: $color-white;
+
+    }
+
+    & .p-accordion-header .p-accordion-header-link {
+        background-color: $color-dark-blue-2;
+        color: $color-white;
+
+    }
+}
+
+.p-accordion .p-accordion-tab {
+    & .p-accordion-content {
+        background-color: $color-dark-blue-2 !important;
+        color: $color-white !important;
+    }
+
+}
+.p-accordion p-accordiontab .p-accordion-header .p-accordion-header-link {
+    background-color: rgba(237, 243, 255, 0.5);
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link {
+    background-color: $color-dark-blue-2;
+    color: $color-white;
+}
+
+.p-accordion .p-accordion-tab:not(.p-accordion-tab-active) .p-accordion-header-link:focus,
+.p-accordion .p-accordion-tab:not(.p-accordion-tab-active) .p-accordion-header-link:visited,
+.p-accordion .p-accordion-tab:not(.p-accordion-tab-active) .p-accordion-header-link:active,
+.p-accordion .p-accordion-tab:not(.p-accordion-tab-active) .p-accordion-header-link:hover
+ {
+    background-color: rgba(237, 243, 255, 0.5);
+}
+
+.p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link {
+    background-color: rgba(237, 243, 255, 0.5);  
+}
+
+.p-accordion-header:hover,
+.p-accordion-header:active,
+.p-accordion-header:focus,
+.p-accordion-header:visited {
+    background-color: rgba(237, 243, 255, 0.5);
+}
+
+.p-accordion .p-accordion-tab.p-accordion-tab-active .p-accordion-toggle-icon {
+    transform: rotate(-360deg);
+}
+
+.p-accordion .p-accordion-tab:not(.p-accordion-tab-active) .p-accordion-toggle-icon {
+    transform: rotate(-360deg);
+}
+
+.accordionTab-description__text {
+    font-weight: $font-weight-bold;
+    font-size: 25px;
+    color: $color-white;
+}
+
+.accordionTab__text {
+    font-weight: $font-weight-normal;
+    font-size: 24px;
+}
+
+.p-accordion-header-text {
+    font-size: 21px;
+}
+
+
+// overflow panel
+
+.p-scrollpanel-bar-y {
+    width: 4px !important;
+    border-radius: 10px !important;
+}
+
+
+// steps
+p-steps .p-steps .p-steps-item .p-menuitem-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    // & .p-steps-number {
+    //     background-color: #fff0f0;       
+    //      color:#fff0f0; 
+    //     width: 64px;
+    //     height: 64px;
+    //     &::before {
+    //         display: block;
+    //         content:"";
+    //         background: url("~/assets/step-active-icon.jpg") no-repeat;
+    //         background-size: 34px 34px;
+    //         height: 34px;
+    //         border-radius: 50%;
+    //         width: 34px;
+    //         position: absolute;
+            
+    //     }
+    // }
+}
+
+// checkout override
+
+.p-radiobutton .p-radiobutton-box.p-highlight.p-focus {
+    background-color: #0DD856;
+    border-color: #0DD856 !important;
+}
+
+.p-radiobutton .p-radiobutton-box.p-highlight {
+    background-color: #0DD856;
+    border-color: #0DD856;
+    position: relative;
+    ::before {
+    display: block;
+    content: "";
+    background: url(/assets/step-active-icon.jpg) no-repeat;
+    background-size: 20px 20px;
+    left: -5px;
+    top: -5px;
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    position: absolute;
+    }
+    .p-radiobutton-icon {
+        background-color: #0DD856;
+    }
+}
+
+.p-radiobutton {
+    position: relative;
+    ::before {
+    display: block;
+    content: "";
+    background: url(/assets/step-not-active-icon.jpg) no-repeat;
+    background-size: 20px 20px;
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    position: absolute;
+    }
+}
+
+.p-radiobutton .p-radiobutton-box.p-highlight:not(.p-disabled):hover {
+    border-color: #0DD856;
+    background: #0DD856;
+    color: #0DD856;
+    border: none;
+}
+
+.p-radiobutton.p-radiobutton-checked.p-radiobutton-focused {
+    border-color: #0DD856;
+    background: #0DD856;
+    color: #0DD856;
+}
+
+
+.p-radiobutton .p-radiobutton-box.p-highlight:focus {
+    background-color: #0DD856;
+    border-color: #0DD856;
+    border: none;
+    .p-radiobutton-icon {
+        background-color: #0DD856;
+    }
+}
+
+
+// dropdown button added custom icon
+
+.dropdown__button-icon {
+    border: 1px solid rgba($color: $color-black, $alpha: 0.4);
+    border-radius: 5px;
+    .p-splitbutton-defaultbutton {
+        border: none !important;
+    }
+
+    .p-button {
+        border: none !important;
+    }
+    .pi-chevron-down:before {
+        display: block !important;
+        content: "" !important;
+        background: url(/assets/dropdown-icon.png) no-repeat !important;
+        background-size: 8px 5px;
+        height: 5px;
+        width: 8px;
+        margin-left: -4px;
+        position: absolute;
+    }
+}
+
+
+// dropdown menu override
+.p-splitbutton {
+    .p-ink-active {
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+// override group button 
+.p-inputgroup-addon:last-child {
+    border: none !important;
+}
+
+// checkboxes override
+.p-checkbox .p-checkbox-box {
+    border-radius: 50% !important;
+    width: 20px;
+    height: 20px;
+    background: #9F9F9F !important;
+    border-color: #9F9F9F !important;
+    ;
+
+}
+
+.p-checkbox {
+    width: 20px;
+    height: 20px;
+
+}
+
+.p-checkbox .p-checkbox-box .p-checkbox-icon::before {
+    content: "";
+
+    display: block;
+    content: "";
+    background: url(/assets/step-not-active-icon.jpg) no-repeat;
+    background-size: 20px 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -2px;
+    left: -2px;
+    width: 20px;
+    position: absolute;
+
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+    background: $color-green-1 !important;
+    border-color: $color-green-1 !important;
+
+}
+
+.p-checkbox .p-checkbox-box.p-highlight .p-checkbox-icon:before {
+    
+    display: block;
+    content: "";
+    background: url(/assets/step-active-icon.jpg) no-repeat;
+    background-size: 20px 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: -2px;
+    left: -2px;
+    width: 20px;
+    position: absolute;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    transform: none;
+    transform-origin: none;
+    -webkit-animation:none;
+    animation: none;
+}

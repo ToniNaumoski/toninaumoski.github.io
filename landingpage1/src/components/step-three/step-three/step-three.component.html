@@ -1,0 +1,147 @@
+<section class="steps steps__step-three">
+    <div class="container">
+        <div class="p-grid ">
+            <div class="p-col-12">
+                <p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="true"></p-steps>
+                <div class="steps__step-three-wrapper p-px-5 p-pb-5 p-mt-6">
+                    <p class="form__label">Welche Tatigloeiten treffen zu ?</p>
+                    <div class="p-d-flex p-flex-column p-flex-md-row p-flex-wrap">
+                        <!-- <div *ngFor="let category of categories" class="p-field-checkbox p-d-inline-flex p-mr-6">
+                        <p-radioButton inpudIt="category.key" name="category" [value]="category"
+                            [(ngModel)]="selectedCategory"></p-radioButton>
+                        <label [for]="category.key">{{category.name}}</label>
+                    </div> -->
+
+                        <div *ngFor="let category of categories" class="p-field-checkbox p-mr-3">
+                            <p-checkbox name="group2" [value]="category" [inputId]="category.key"></p-checkbox>
+                            <label [for]="category.key">{{category.name}}</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="p-d-flex p-flex-column p-flex-md-row">
+                    <div *ngFor="let category of categoriesTwo"
+                        class="p-field-checkbox p-d-inline-flex p-mr-6 form__checkbox-row-two">
+                        <p-radioButton inpudIt="category.key" name="category" [value]="category"
+                            [(ngModel)]="selectedCategoryTwo"></p-radioButton>
+                        <label [for]="category.key">{{category.name}}</label>
+                    </div>
+                </div> -->
+            </div>
+            <div class="p-col-12">
+                <div class="steps__step-three-wrapper p-px-5 p-pb-5 p-mt-6">
+                    <p class="form__label">Wann sollen die helfer eintreffen?</p>
+                    <div class="p-d-flex p-flex-wrap">
+                        <div class="p-d-flex p-jc-center p-mt-3 p-mr-4">
+                            <img src="assets/calendar-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left-img-border" />
+                            <p-calendar [(ngModel)]="date1"></p-calendar>
+                        </div>
+                        <div class="p-d-flex p-jc-center p-mt-3">
+                            <img src="assets/time-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left-img-border" />
+                            <p-inputMask [(ngModel)]="val" (ngModelChange)="onClickTime()"  mask="99:99" name="stopTime" tabindex="4" placeholder="hh:mm"
+                                slotChar="hh:mm"></p-inputMask>
+                            <!-- <p-calendar [(ngModel)]="date2" [timeOnly]="true"  hourFormat="24" inputId="timeonly"></p-calendar> -->
+                            <!-- /^(?:(?:1[0-2]|0?[1-9]):[0-5]\d\s*[AaPp][Mm])?$/ -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-col-12">
+                <div class="steps__step-three-wrapper p-px-5 p-pb-5 p-mt-6">
+                    <p class="form__label">Wie viele stunden werden vorsassichtlich benotight</p>
+                    <div class="p-d-flex p-flex-wrap">
+                        <div class="p-d-flex p-jc-center p-mt-3 p-mr-4">
+                            <img src="assets/calendar-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left-img-border" />
+                            <p-calendar [(ngModel)]="date1"></p-calendar>
+                        </div>
+                        <div class="p-d-flex p-jc-center p-mt-3">
+                            <img src="assets/time-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left-img-border" />
+                            <!-- <p-calendar [(ngModel)]="date2" [timeOnly]="true" hourFormat="24"
+                                inputId="timeonly">
+                            </p-calendar> -->
+                            <input type="time" pInputText
+                            class="steps__step-three-adderss-section-input" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-col-12">
+                <div class="steps__step-three-wrapper p-px-5 p-pb-5 p-mt-6">
+                    <p class="form__label">Wo Soll der umzug starten?</p>
+                    <div class="p-d-flex  p-flex-wrap ">
+                        <div class="p-d-flex p-jc-start p-mt-3 steps__step-three-adderss-section p-mr-0 p-mr-md-3">
+                            <input type="text" pInputText [(ngModel)]="streetAddress"
+                                class="steps__step-three-adderss-section-input" />
+                            <img *ngIf="streetAddress == ''" src="assets/step-not-active-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left" />
+                                <img *ngIf="streetAddress  !== ''" src="assets/step-active-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left" />
+                        </div>
+                        <div class="p-d-flex p-jc-start p-mt-3 steps__step-three-adderss-section">
+                            <input type="text" pInputText [(ngModel)]="houseNumber"
+                                class="steps__step-three-adderss-section-input" />
+                                <img *ngIf="houseNumber == ''" src="assets/step-not-active-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left" />
+                                <img *ngIf="houseNumber  !== ''" src="assets/step-active-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left" />
+                        </div>
+                    </div>
+
+                        <div class="p-d-flex p-flex-wrap">
+                            <div class="p-d-flex p-jc-start p-mt-3 p-mr-0 p-mr-md-3 steps__step-three-postal-code-section">
+                                <input type="text" pInputText [(ngModel)]="postalCode" />
+                                <img *ngIf="postalCode == ''" src="assets/step-not-active-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left" />
+                                <img *ngIf="postalCode  !== ''" src="assets/step-active-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left" />
+                            </div>
+                            <div class="p-d-flex p-jc-start p-mt-3 steps__step-three-city-section">
+                                <input type="text" pInputText [(ngModel)]="city" />
+                                <img *ngIf="city == ''" src="assets/step-not-active-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left" />
+                                <img *ngIf="city !== ''" src="assets/step-active-icon.svg" alt="send-image"
+                                class="steps__step-three-image-on-left" />
+                            </div>
+                        </div>
+                </div>
+                <div class="p-d-flex p-mt-5 p-mb-5">
+                    <button (click)="onClickBtn()" class="p-d-flex p-jc-center p-ai-center steps steps__step-three__button-full-width">
+                        <img src="assets/plus-icon.svg" alt="send-image" class="steps__step-three-image-on-left" />
+                        <p>zwischenstopp einfügen</p>
+                    </button>
+                </div>
+                <div class="steps__step-three-wrapper p-px-5 p-pb-5 p-mt-6">
+                <p class="form__label">Soll vumzug fur sie die helfer suswaehlen?</p>
+                <div class="p-d-flex p-flex-column p-flex-md-row">
+                    <div *ngFor="let category of categoriesThree" class="p-field-checkbox p-d-inline-flex p-mr-6">
+                        <p-radioButton inpudIt="category.key" name="category" [value]="category"
+                            [(ngModel)]="selectedCategory"></p-radioButton>
+                        <label [for]="category.key">{{category.name}}</label>
+                    </div>
+                </div>
+                </div>
+                <div class="steps__step-three-wrapper p-px-5 p-pb-5 p-mt-6">
+                <p class="form__label">Kurze Beschreibung (Max 200 worter)</p>
+                <div class="p-d-flex p-flex-column p-flex-md-row">
+                    <textarea pInputTextarea></textarea>
+                </div>
+                </div>
+                <div class="p-d-flex p-flex-column p-jc-center p-ai-center">
+                    <p class="form__label p-mb-2 p-mt-6">Kurze Beschreibung (Max 200 worter)</p>
+                    <p class="form__text">Kurze Beschreibung (Max 200 worter)</p>
+                </div>
+                <div class="p-d-flex p-flex-start">
+                    <button pButton routerLink="/announcement/cost/stepfour" label="Weiter"
+                        class="p-button-help p-button-lg p-px-6">
+                    </button>
+                    <button pButton routerLink="/announcement/cost/steptwo" label="Weiter"
+                        class="p-ml-auto p-button-lg p-px-6">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

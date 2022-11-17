@@ -1,0 +1,558 @@
+.steps {
+    .p-steps .p-steps-item:nth-child(1) {
+        &::before {
+            left:50% !important;
+            width: 50%;
+        }
+    }
+
+    .p-steps .p-steps-item:nth-last-child(1) {
+        &::before {
+                right: -50% !important;
+                width: 50%;
+            
+        }
+    }
+
+        .p-steps.p-component {
+        background-color: $color-sky-blue2 !important;
+    }
+
+    .p-steps .p-steps-item {
+        justify-content: space-around;
+    }
+    
+    &__label {
+        font-weight: $font-weight-bold;
+        font-size: 24px;
+        color: $color-black;
+    }
+
+
+  //  step one
+    &__step-one{
+        &-form-wrapper {
+            .p-inputnumber.p-component {
+                width: 100%;
+            }
+        }
+        // p-steps .p-steps .p-steps-item:nth-child(1) {
+        //     & .p-steps-number {
+        //         background-color: #EAF7F4;     
+        //          color: #EAF7F4; 
+        //         width: 64px;
+        //         height: 64px;
+        // border: 1px solid  rgba($color: #0DD856, $alpha: 0.2);
+        //         &::before {
+        //             display: block;
+        //             content:"";
+        //             background: url("~/assets/step-active-icon.jpg") no-repeat;
+        //             background-size: 34px 34px;
+        //             height: 34px;
+        //             border-radius: 50%;
+        //             width: 34px;
+        //             position: absolute;
+                    
+        //         }
+        //     }
+        // }
+        
+        p-steps .p-steps .p-steps-item:nth-child(1) {
+            & .p-steps-title {
+                color: black !important;
+                font-weight: 400;
+            }
+            & .p-steps-number {
+                background-color: #fff0f0;       
+                 color:#fff0f0; 
+                width: 64px;
+                height: 64px;
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-not-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }
+        
+        p-steps .p-steps .p-steps-item:nth-child(2),
+        p-steps .p-steps .p-steps-item:nth-child(3),
+        p-steps .p-steps .p-steps-item:nth-child(4),
+        p-steps .p-steps .p-steps-item:nth-child(5) {
+            & .p-steps-number {
+                background-color: white;       
+                 color:white; 
+                width: 64px;
+                height: 64px;
+                border:  1px solid rgba($color: #9F9F9F, $alpha: 1);
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-not-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }
+    }
+
+    &__step-two {
+
+        p-steps .p-steps .p-steps-item:nth-child(1) {
+            & .p-steps-title {
+                color: black !important;
+                font-weight: 600 !important;
+            }
+            & .p-steps-number {
+                background-color: #EAF7F4;     
+                 color: #EAF7F4; 
+                width: 64px;
+                height: 64px;
+        border: 1px solid  rgba($color: #0DD856, $alpha: 0.2);
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }        
+
+        p-steps .p-steps .p-steps-item:nth-child(2) {
+            & .p-steps-title {
+                color: black !important;
+                font-weight: 400;
+            }
+            & .p-steps-number {
+                background-color: #fff0f0;       
+                 color:#fff0f0; 
+                width: 64px;
+                height: 64px;
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-not-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }
+        
+        p-steps .p-steps .p-steps-item:nth-child(3),
+        p-steps .p-steps .p-steps-item:nth-child(4),
+        p-steps .p-steps .p-steps-item:nth-child(5) {
+            & .p-steps-number {
+                background-color: white;       
+                 color:white; 
+                width: 64px;
+                height: 64px;
+                border:  1px solid rgba($color: #9F9F9F, $alpha: 1);
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-not-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }        
+
+    }
+
+    &__step-three {
+
+        
+@media (min-width: 0px) {
+    &-adderss-section {
+        flex: 1 1 auto;
+      input {
+        flex: 1 1 auto;
+      }
+    }
+
+     &-postal-code-section  {
+        flex: 1 1 auto;
+        input {
+          flex: 1 1 auto;
+        }  
+     }
+
+     &-city-section  {
+        flex: 1 1 auto;
+        input {
+          flex: 1 1 auto;
+        }  
+     }
+
+}
+
+
+
+@media (min-width: 992px) {
+    &-adderss-section {
+        flex: 1 1 auto;
+      input {
+        flex: 1 1 auto;
+      }
+    }
+
+     &-postal-code-section  {
+        flex: 0 1 auto;
+       
+        input {
+          flex: 0 1 auto;
+        }  
+     }
+
+     &-city-section  {
+        flex: 1 1 auto;
+        
+        input {
+          flex: 1 1 auto;
+        }  
+     }
+}
+
+
+
+
+        &-wrapper {
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+
+        .p-datepicker .p-timepicker button {
+            color: white;
+            flex-direction: column;
+        }
+
+        .p-datepicker .p-timepicker button:last-child {
+            margin-top: -12px;
+        }
+
+        .p-datepicker .p-timepicker button:enabled:hover {
+            color: white;
+            flex-direction: column;
+        }
+        
+        .p-datepicker .p-timepicker span {
+            font-size: 1.25rem;
+            color: black;
+        }
+
+        .p-inputtext {
+            background-color: $color-sky-blue2;
+            border: none;
+        }
+
+        p-steps .p-steps .p-steps-item:nth-child(1),
+        p-steps .p-steps .p-steps-item:nth-child(2) {
+            & .p-steps-title {
+                color: black !important;
+                font-weight: 600 !important;
+            }
+            & .p-steps-number {
+                background-color: #EAF7F4;     
+                 color: #EAF7F4; 
+                width: 64px;
+                height: 64px;
+        border: 1px solid  rgba($color: #0DD856, $alpha: 0.2);
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }        
+        
+        p-steps .p-steps .p-steps-item:nth-child(3) {
+            & .p-steps-title {
+                color: black !important;
+                font-weight: 400;
+            }
+            & .p-steps-number {
+                background-color: #fff0f0;       
+                 color:#fff0f0; 
+                width: 64px;
+                height: 64px;
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-not-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }
+        
+        p-steps .p-steps .p-steps-item:nth-child(4),
+        p-steps .p-steps .p-steps-item:nth-child(5) {
+            & .p-steps-number {
+                background-color: white;       
+                 color:white; 
+                width: 64px;
+                height: 64px;
+                border:  1px solid rgba($color: #9F9F9F, $alpha: 1);
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-not-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+ 
+                }
+            }
+        }            
+
+    &-image-on-left {
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #F8F9FE;
+            &-img-border {
+                padding-left: 10px;
+                padding-right: 10px;
+                background-color: #F8F9FE;
+                border-right: 1px solid rgba(0, 0, 0, 0.15);
+            }
+        }
+
+        &__button-full-width {
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: $color-white;
+            font-weight: $font-weight-bold;
+            font-size: 18px;
+         }
+
+         & textarea {
+            background: #F8F9FE;
+            border-radius: 5px;
+            width: 100%;
+            height: 138px;
+         }
+    }
+
+    &__step-five {
+
+        p-steps .p-steps .p-steps-item:nth-child(1),
+        p-steps .p-steps .p-steps-item:nth-child(2),
+        p-steps .p-steps .p-steps-item:nth-child(3),
+        p-steps .p-steps .p-steps-item:nth-child(4) {
+            & .p-steps-title {
+                color: black !important;
+                font-weight: 600 !important;
+            }
+            & .p-steps-number {
+                background-color: #EAF7F4;     
+                 color: #EAF7F4; 
+                width: 64px;
+                height: 64px;
+        border: 1px solid  rgba($color: #0DD856, $alpha: 0.2);
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }        
+        
+        p-steps .p-steps .p-steps-item:nth-child(5) {
+            & .p-steps-title {
+                color: black !important;
+                font-weight: 400;
+            }
+            & .p-steps-number {
+                background-color: #fff0f0;       
+                 color:#fff0f0; 
+                width: 64px;
+                height: 64px;
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-not-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }
+                  
+
+    &-image-on-left {
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #F8F9FE;
+        }
+
+        &__button-full-width {
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+         }
+
+         & textarea {
+            background: #F8F9FE;
+            border-radius: 5px;
+            width: 100%;
+            height: 138px;
+         }
+    }
+
+
+    &__step-four {
+
+        p-steps .p-steps .p-steps-item:nth-child(1),
+        p-steps .p-steps .p-steps-item:nth-child(2),
+        p-steps .p-steps .p-steps-item:nth-child(3) {
+            & .p-steps-title {
+                color: black !important;
+                font-weight: 600 !important;
+            }
+            & .p-steps-number {
+                background-color: #EAF7F4;     
+                 color: #EAF7F4; 
+                width: 64px;
+                height: 64px;
+        border: 1px solid  rgba($color: #0DD856, $alpha: 0.2);
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }        
+        
+        p-steps .p-steps .p-steps-item:nth-child(4) {
+            & .p-steps-title {
+                color: black !important;
+                font-weight: 400;
+            }
+            & .p-steps-number {
+                background-color: #fff0f0;       
+                 color:#fff0f0; 
+                width: 64px;
+                height: 64px;
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-not-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }
+        
+        p-steps .p-steps .p-steps-item:nth-child(5) {
+            & .p-steps-number {
+                background-color: white;       
+                 color:white; 
+                width: 64px;
+                height: 64px;
+                border:  1px solid rgba($color: #9F9F9F, $alpha: 1);
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/step-not-active-icon.jpg") no-repeat;
+                    background-size: 34px 34px;
+                    height: 34px;
+                    border-radius: 50%;
+                    width: 34px;
+                    position: absolute;
+                    
+                }
+            }
+        }            
+
+    &-image-on-left {
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #F8F9FE;
+        }
+
+        &__button-full-width {
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+         }
+
+         & textarea {
+            background: #F8F9FE;
+            border-radius: 5px;
+            width: 100%;
+            height: 138px;
+         }
+    }    
+
+
+    
+    @media (min-width: 768px) { 
+                // step 3
+        &__step-three {
+            .form__checkbox-row-two:nth-child(2) {
+                margin-left: -5px;
+            }
+
+            .form__checkbox-row-two:nth-child(3) {
+                margin-left: -4px;
+            }
+        }
+    }
+
+}

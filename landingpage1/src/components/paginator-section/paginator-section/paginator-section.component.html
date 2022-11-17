@@ -1,0 +1,79 @@
+<section class="paginator-section">
+    <div class="p-grid">
+        <div class="p-col-12">
+            <div class="p-d-flex p-jc-end paginator-section__header-data p-mb-3">
+               <p class="paginator-section__header-data-title p-mr-3 p-mr-auto">
+                   {{headerData[0].title}}
+               </p>
+               <button pButton type="button" [label]="headerData[0].buttonOneLink"
+               class="paginator-section__item-button p-button-secondary p-mr-3 paginator-section__header-data__item-button-one"></button>
+               <button pButton type="button" [label]="headerData[0].buttonTwoLink"
+               class="paginator-section__item-button paginator-section__header-data__item-button-two "
+               [ngClass]="{
+                'p-mr-3': scrollPanel !== null,
+                'p-mr-0': scrollPanel == null
+                }">
+               </button>
+            </div>
+            <div *ngIf="items">
+                <div *ngIf="scrollPanel !== null" class="p-d-flex p-flex-column">
+                    <p-scrollPanel [style]="{width: '100%', height: scrollPanel}" class="">
+                        <div *ngFor="let item of items; let i = index;">
+                            <div
+                                class="p-d-flex paginator-section__item-wrapper p-flex-column p-flex-md-row p-ai-center p-ai-md-start">
+                                <img class="paginator-section__item-img" [src]="item.imgSrc" alt="pagination-img" />
+                                <div
+                                    class="paginator-section__user-info p-d-flex p-flex-column p-ml-3 p-ai-center p-ai-md-start">
+                                    <p class="paginator-section__user-info-title">{{item.title}}</p>
+                                    <div class="p-d-flex paginator-section__user-info-data">
+                                        <img class="p-mr-1" src="assets/map.svg" alt="img" />
+                                        <p class="p-mr-3">{{item.location}}</p>
+                                        <img class="p-mr-1" src="assets/time.svg" alt="img" />
+                                        <p class="p-mr-3">{{item.time}}</p>
+                                        <img class="p-mr-1" src="assets/date.svg" alt="img" />
+                                        <p class="p-mr-3">{{item.date}}</p>
+                                    </div>
+                                    <button *ngIf="item?.button" pButton type="button" [label]="item.button.buttonLink"
+                                    [routerLink]=item.button.buttonUrl class="paginator-section__item-button p-button-help"></button>
+
+                                    <button *ngIf="item?.buttonGray" pButton type="button" [label]="item.buttonGray.buttonLink"
+                                    [routerLink]=item.buttonGray.buttonUrl class="paginator-section__item-button paginator-section__item-button-info p-button-info"></button>
+                                    <p-splitButton *ngIf="item?.buttonDropdown" label="Auswählen" [model]="item.buttonDropdown.items" styleClass="paginator-section__item-button p-button-help dropdown__button-icon"></p-splitButton>
+                                </div>
+                            </div>
+                        </div>
+                    </p-scrollPanel>
+                </div>
+                <div *ngIf="scrollPanel == null" class="p-d-flex p-flex-column">
+                    <div *ngFor="let item of items; let i = index;">
+                        <div
+                            class="p-d-flex paginator-section__item-wrapper p-flex-column p-flex-md-row p-ai-center p-ai-md-start">
+                            <img class="paginator-section__item-img" [src]="item.imgSrc" alt="pagination-img" />
+                            <div
+                                class="paginator-section__user-info p-d-flex p-flex-column p-ml-3 p-ai-center p-ai-md-start">
+                                <p class="paginator-section__user-info-title">{{item.title}}</p>
+                                <div class="p-d-flex paginator-section__user-info-data">
+                                    <img class="p-mr-1" src="assets/map.svg" alt="img" />
+                                    <p class="p-mr-3">{{item.location}}</p>
+                                    <img class="p-mr-1" src="assets/time.svg" alt="img" />
+                                    <p class="p-mr-3">{{item.time}}</p>
+                                    <img class="p-mr-1" src="assets/date.svg" alt="img" />
+                                    <p class="p-mr-3">{{item.date}}</p>
+                                </div>
+                                <button *ngIf="item?.button" pButton type="button" [label]="item.button.buttonLink"
+                                [routerLink]=item.button.buttonUrl class="paginator-section__item-button p-button-help"></button>
+
+                                <button *ngIf="item?.buttonGray" pButton type="button" [label]="item.buttonGray.buttonLink"
+                                [routerLink]=item.buttonGray.buttonUrl class="paginator-section__item-button paginator-section__item-button-info p-button-info"></button>
+                                <p-splitButton *ngIf="item?.buttonDropdown" label="Auswählen" [model]="item.buttonDropdown.items" styleClass="paginator-section__item-button p-button-help dropdown__button-icon"></p-splitButton>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p-paginator [rows]=rows [totalRecords]=totalRecords [pageLinkSize]=displayPages [first]="first"
+                (onPageChange)="onPageChange($event)"></p-paginator>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,382 @@
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* headings */
+h3 {
+  font-size: 2.8rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+/* website background */
+#background {
+    width: 100vw;
+    height: 100vh;
+    background: #6c3be5;
+    background: var(--primary-bg-gradiant);
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* name surname section */
+#name-surname-section {
+  font-family: 'Skyer';
+  z-index: -1;
+}
+
+/* name text */
+#name-surname-section .text {
+  font-size: 2.8rem; 
+  color: var(--main-secondary-color);
+}
+
+/* title of all sections */
+.section-title {
+  background: var(--primary-text-gradiant);
+  font-family: 'Abril Fatface', cursive;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+/* sticky section title wrapper */
+
+.sticky-section-title-wrapper {
+  position: sticky;
+  top: 0px;
+  background: var(--primary-bg-gradiant);
+}
+
+/* sticky article */
+.sticky-article {
+  position: sticky;
+  top: 60px;
+}
+
+
+/* main content sections */
+.main-content-article {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+
+#name-surname-section { grid-area: name-section; }
+
+#about { 
+  grid-area: about-section; 
+}
+
+/* project section */
+#projects { grid-area: projects-section;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+.project-article {
+  display: flex;
+}
+
+.project-title {
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6rem;
+  /* line-height: 239px; */
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  filter: blur(2px);
+  position: absolute;
+  top: 120vh;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+
+.project-image {
+  max-height: 45vh;
+  max-width: 90%;
+  border-radius: 10px;
+  border: 2px solid #6f3be1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 120vh;
+}
+
+.project-description {
+  font-family: Adobe Gothic Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.8rem;
+  display: flex;
+  color: #000000;
+  /* filter: blur(0.5px); */
+  position: absolute;
+  top: 120vh;
+  flex-direction: column;
+}
+
+.project-description a {
+  filter: blur(0px);
+  color: #a9e1ff;
+}
+
+#job-history { grid-area: job-history-section; }
+
+/* skills section*/
+#skills { grid-area: skills-section; }
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skill-bar {
+  width: 0%;
+  background: #ED0C18;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  filter: blur(1px);
+  border-radius: 15px;
+  height: 25px;
+  position: relative;
+}
+
+.skill-bar--state--two {
+  background: #F70CA8;
+  max-width: 90%;
+  width: 0;
+}
+
+.skill-bar--state--three {
+  background: #C216E0;
+  max-width: 85%;
+  width: 0;
+}
+
+
+.skill-bar--state--four {
+  background: #860CF7;
+  max-width: 70%;
+  width: 0;
+}
+
+.skill-bar--state--five {
+  background: #2F08D7;
+  max-width: 65%;
+  width: 0;
+}
+
+.hire-me-btn {
+  background-color: transparent;
+  border: 10px solid#2F08D7;
+  font-size: 4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 50px;
+
+}
+
+#hire-me-content-wrapper h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.linked-in-span {
+  /* color: #0077b5; */
+  color:#a9e1ff;
+}
+
+#hire-me-content {
+  overflow: hidden;
+}
+
+#hire-me-content-wrapper {
+  margin-top: -500px;
+}
+
+
+#hire-me-content-wrapper.show {
+animation-name: hire-me-content-show;
+ animation-fill-mode: forwards;
+ animation-duration: 1s;
+}
+
+#hire-me-content-wrapper.hide {
+  animation-name: hire-me-content-hide;
+   animation-fill-mode: forwards;
+   animation-duration: 1s;
+  }
+
+@keyframes hire-me-content-show {
+  0% { margin-top:-500px;}
+  100% { margin-top:10px;}
+}
+
+@keyframes hire-me-content-hide {
+  0% { margin-top:10px;}
+  100% { margin-top:-500px;}
+}
+
+
+
+
+/* tolltip */
+.tooltip {
+  width: 70px;
+  height: 35px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  padding-top: 10px;
+  top: -70px;
+  right: 0;
+  color: white;
+  background-color: black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-style: normal;
+  /* font-weight: 900; */
+  font-size: 20px;
+  opacity: 0;
+  
+}
+
+.tooltip::after {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid black;
+  position: absolute;
+  clear: both;
+  content: '';
+  left: 20px;
+  top: 40px;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+/*  custom classes*/
+
+ .overflow-hidden {
+  overflow: hidden;
+} 
+
+
+/* animations */
+
+.project-title-animate {
+  animation-name: project-title-animate;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.project-title-animate-hide {
+  animation-name: project-title-animate-hide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes project-title-animate {
+  100% { top:15vh;}
+}
+
+@keyframes project-title-animate-hide {
+  0% {top:15vh;}
+  100% { top:-150vh;}
+}
+
+.project-image-animate {
+  animation-name: project-image-animate;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+.project-image-animate-hide {
+  animation-name: project-image-animate-hide;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes project-image-animate {
+  100% { top:30vh;}
+}
+
+@keyframes project-image-animate-hide {
+  0% { top:30vh;}
+  100% { top:-150vh;}
+}
+
+.project-description-animate {
+  animation-name: project-description-animate;
+  animation-duration:3s;
+  animation-fill-mode: forwards;
+}
+
+.project-description-animate-hide {
+  animation-name: project-description-animate-hide;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes project-description-animate {
+  100% { top:73vh;}
+}
+
+@keyframes project-description-animate-hide {
+  0% { top:73vh;}
+  100% { top:-150vh;}
+}
+
+
+@keyframes skills-animation {
+  0% { width:0;}
+  100% {width: 100%;}
+}
+
+@keyframes skills-animation-tooltip {
+  0% { opacity:0;}
+  20% { opacity:0;}
+  100% {opacity:1;}
+}
+
+
+
+.skills-animate {
+  animation-name:skills-animation;
+  animation-duration:3s;
+  animation-fill-mode: forwards;
+}
+
+.tooltip-animate {
+  animation-name: skills-animation-tooltip;
+  animation-duration:3s;
+  animation-fill-mode: forwards;
+}

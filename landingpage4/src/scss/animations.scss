@@ -1,0 +1,39 @@
+
+@keyframes width-animation-line {
+    0% { width:0;}
+    100% {width:150%;}
+  }
+
+  
+@keyframes dot-animation {
+    0% { width:0;}
+    20% {width:28px;}
+    100% {width:28px;}
+}
+
+
+@keyframes dot-animation-text {
+    0% { width:0;}
+    2% {width:500px;}
+    100% {width:500px;}
+}
+
+.animate-line-width {
+        animation-name:width-animation-line;
+        animation-duration:5s;
+        animation-fill-mode: forwards;
+}
+
+.animate-dot-width {
+    animation-name:dot-animation;
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
+
+.animate-dot-text-width {
+    animation-name:dot-animation-text;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+}
+
+

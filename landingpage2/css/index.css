@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "HattoriHanzoLight", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+   }
+   
+   
+   	@font-face {
+    font-family: 'HattoriHanzoLight';
+    src: url('../fontface/Hattori_Hanzo-webfont.eot');
+    src: url('../fontface/Hattori_Hanzo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontface/Hattori_Hanzo-webfont.woff') format('woff'),
+         url('../fontface/Hattori_Hanzo-webfont.ttf') format('truetype'),
+         url('../fontface/Hattori_Hanzo-webfont.svg#HattoriHanzoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+   
+   
+#header {
+	clear: both;
+	height: 150px;
+	width: 100%;
+}
+#header #header-top {
+	clear: both;
+	height: 75px;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	background-color: #f8f4eb;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+#header #header-top h2 {
+	font-size: 36px;
+
+}
+ .span-blue {
+	color: #06F;
+}
+#header #header-wraper {
+	height: 80px;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+	background-color: #FFF;
+	
+}
+#header #header-wraper #header-logo {
+	height: 36px;
+	width: 180px;
+	padding-top: 22px;
+	float: left;
+}
+#header #header-wraper #header-menu {
+	float: right;
+	margin-top: 40px;
+}
+#header #header-wraper #header-menu #nav #header-ul {
+	list-style-type: none;
+	float: right;
+}
+#header #header-wraper #header-menu #nav #header-ul .header-li {
+	float: left;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#header #header-wraper #header-menu #nav #header-ul .header-li a {
+	font-size: 18px;
+	color: #06F;
+}
+
+
+#main {
+	clear: both;
+	height: 800px;
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+#main #main-wrapper {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#main #main-wrapper h1 {
+	padding-top: 30px;
+	padding-right: 70px;
+	padding-left: 70px;
+	text-align: center;
+}
+#main #main-wrapper #cloud-main {
+	background-image: url(../img/psd-clouds-icons300.png);
+	background-repeat: no-repeat;
+	float: left;
+	height: 288px;
+	width: 360px;
+	background-position: center center;
+	margin-top: 25px;
+}
+#main #main-wrapper #cloud-main h4 {
+	text-align: center;
+	height: 60px;
+	width: 150px;
+	margin-top: 125px;
+	margin-left: 110px;
+	color: #FFF;
+	font-size: 18px;
+}
+
+#main #main-wrapper #woman {
+	width: 591px;
+	height: 480px;
+	float: left;
+	background-image: url(../img/woman.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	margin-left: -350px;
+	margin-top: 44px;
+}
+#main #main-wrapper #main-form-wrapper {
+	float: right;
+	height: 450px;
+	width: 342px;
+	margin-top: 74px;
+	background-image: url(../img/bg-form.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	-moz-box-shadow: 0px 0px 5px #000;
+	-webkit-box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 5px #000;
+	
+}
+#main #main-wrapper #main-form-wrapper #main-form {
+	height: 400px;
+	width: 342px;
+	margin-top: -25px;
+}
+
+
+#main #main-wrapper #main-form-wrapper #form-header {
+	height: 92px;
+	width: 342px;
+}
+#main #main-wrapper #main-form-wrapper #main-form p {
+	color: #FFF;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+#main #main-wrapper #main-form-wrapper #main-form p #firstname {
+	height: 20px;
+	width: 300px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#main #main-wrapper #main-form-wrapper #main-form p #lastname {
+	height: 20px;
+	width: 300px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#main #main-wrapper #main-form-wrapper #main-form p #email {
+	height: 20px;
+	width: 300px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#main #main-wrapper #main-form-wrapper #main-form p #tel {
+	height: 20px;
+	width: 300px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#main #main-wrapper #main-form-wrapper #main-form p #budget {
+
+	
+	
+	margin-bottom:5px;
+}
+
+#main #main-wrapper #main-form-wrapper #main-form p #message {
+	height: 55px;
+	width: 300px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	resize: none;
+}
+
+#main #main-wrapper #main-form-wrapper #main-form p #submit {
+	font-size: 24px;
+	color: #3679C4;
+	height: 35px;
+	width: 160px;
+	padding-top: 2px;
+}
+.form-span {
+	font-size: 14px;
+	color: #CCFF00;
+	padding-left: 4px;
+}
+
+
+#main #main-wrapper h2 {
+	font-size: 36px;
+	text-align: center;
+	padding-top: 44px;
+	clear: both;
+	color: #333;
+}
+#main #main-wrapper h3 {
+	text-align: center;
+	font-size: 30px;
+}
+
+#main #main-wrapper #footer {
+	height: 100px;
+	width: 960px;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #333;
+	clear: both;
+	margin-top: 30px;
+}
+#main #main-wrapper #footer h4 {
+	float: left;
+	margin-top: 20px;
+}
+
+#main #main-wrapper #footer #footer-ul {
+	list-style-type: none;
+	float: right;
+}
+#main #main-wrapper #footer #footer-ul .footer-li {
+	float: left;
+	margin-top: 20px;
+}
+
+#main #main-wrapper #footer #footer-ul .footer-li a {
+	font-size: 18px;
+	color: #06F;
+	margin-left: 30px;
+}

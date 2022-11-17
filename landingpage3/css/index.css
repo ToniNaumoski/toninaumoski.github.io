@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;}
+#header {
+	height: 400px;
+	width: 100%;
+	background-color: #09C;
+	clear: both;
+
+
+
+	
+	
+}
+#header #header-wrapper {
+	height: 420px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+}
+#header #header-wrapper #header-logo {
+	float: left;
+	height: 70px;
+	width: 300px;
+}
+#header #header-wrapper #header-logo img {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+
+#header #header-wrapper #nav {
+	height: 70px;
+	width: 640px;
+	float: right;
+}
+#header #header-wrapper #nav #header-ul {
+	float: right;
+	list-style-type: none;
+}
+#header #header-wrapper #nav #header-ul .header-li {
+	float: left;
+	padding-right: 11px;
+	padding-left: 11px;
+	text-decoration: none;
+	margin-top: 25px;
+}
+#header #header-wrapper #nav #header-ul .header-li a {
+	background-color: #006;
+	padding-top: 2px;
+	padding-right: 12px;
+	padding-bottom: 2px;
+	padding-left: 12px;
+	color: #FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#header #header-wrapper #nav #header-ul .header-li a:hover{
+	background-color: #09F;
+}
+#header #header-wrapper h1 {
+	color: #FFF;
+	font-size: 34px;
+	line-height: 55px;
+}
+#header #header-wrapper h3 {
+	color: #FFF;
+	font-size: 24px;
+	padding-left: 5px;
+	line-height: 22px;
+	padding-bottom: 14px;
+}
+#header #header-wrapper h4 {
+	text-align: left;
+	font-size: 22px;
+	color: #333;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+#header #header-wrapper img {
+	padding-left: 309px;
+	padding-top: 15px;
+}
+#formwrapper {
+	
+}
+#form-background #formwrapper {
+	height: 400px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#form-background {
+	height: 400px;
+	width: 100%;
+	background-color: #CCC;
+}
+#form-background #formwrapper #form-blue {
+	background-image: url(../img/bg-form.png);
+	background-repeat: repeat-x;
+	height: 400px;
+	width: 342px;
+	margin-left: 309px;
+}

@@ -1,0 +1,162 @@
+.header {
+      /* The image used */
+  background: url("./../assets/background.png") no-repeat center center; 
+  /* Full height */
+  /* Center and scale the image nicely */
+  color: #ffffff;
+  background-size: cover;
+  padding-top: 15px;
+  overflow-x: hidden;
+
+
+  &__section-primary {
+      margin-bottom: 85px;
+
+      &-btn {
+          padding-left: 30px;
+          padding-right: 30px;
+      }
+  }
+
+  &__section-secondary-title {
+    font-size: $font-size--48;
+    font-weight: $font-weight--light;
+    color: #ffffff;
+
+    &-bold {
+      font-weight: $font-weight--bold;
+      color: #10C7A2;
+    }
+
+  }
+
+//   &__section-secondary-section-one {
+//       max-width: 50%; 
+//   }
+  
+  &__section-secondary-text-section-one {
+      margin-top: 36px;
+      margin-bottom: 36px;
+  }
+
+  &__section-secondary-buttons {
+      margin-right: 20px;
+  }
+
+  &__section-secondary-section-two {
+      position: relative;   
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+  }
+
+  &__section-secondary-section-two-dots-1 {
+      position: absolute;
+      left: 87px;
+      top: 280px;
+      width: 0;
+  }
+
+  &__section-secondary-section-two-dots-1-text {
+    position: absolute;
+    left: 130px;
+    top: 280px;
+    width: 0;
+    overflow: hidden;
+}
+
+&__section-secondary-section-two-dots-2 {
+    position: absolute;
+    left: 248px;
+    top: 165px;
+    width: 0;
+}
+
+&__section-secondary-section-two-dots-2-text {
+  position: absolute;
+  left: 290px;
+  top: 165px;
+  width: 100%;
+  width: 0;
+  overflow: hidden;
+}
+
+&__section-secondary-section-two-dots-3 {
+    position: absolute;
+    left: 410px;
+    top: 54px;
+    width: 0;
+}
+
+&__section-secondary-section-two-dots-3-text {
+  position: absolute;
+  left: 461px;
+  top: 54px;
+  width: 100%;
+  width: 0;
+  overflow: hidden;
+}
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) {  
+    .header {
+        min-height: 710px; 
+        &__section-secondary-title {
+
+        &-second-bold {
+            font-weight: $font-weight--bold;
+            color: #ffffff;
+            &:before {
+                background: url(./../assets/stroke.png);
+                content: "";
+                height: 27px;
+                width: 103px;
+                position: absolute;
+                /* top: 44px; */
+                margin-top: 54px;
+                margin-left: 30px;
+               }
+           }
+       }
+    }
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .header {
+        min-height: 930px;
+    &__section-secondary-title {
+
+        &-second-bold {
+            font-weight: $font-weight--bold;
+            color: #ffffff;
+            &:before {
+                background: url(./../assets/stroke.png);
+                content: "";
+                height: 27px;
+                width: 103px;
+                position: absolute;
+                /* top: 44px; */
+                margin-top: 60px;
+                margin-left: 107px;
+                }
+            }
+        }
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .header {
+        min-height: 626px;
+    }
+}

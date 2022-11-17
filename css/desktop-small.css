@@ -1,0 +1,143 @@
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+  html {
+    /* default font size of 1 rem = 10px*/
+    font-size: 62.5%; 
+  }
+
+    #page-wrapper {
+        display: grid;
+        grid-template-areas:
+        'about-section name-section projects-section' 
+        'job-history-section name-section  skills-section';
+        grid-template-columns: 1fr 120px 1fr;
+        grid-row-gap: 10px;
+    
+    }
+
+    #name-surname-section {
+        width: 20px;
+        left: calc(50% - 14px);
+        height: 100%;
+        min-height: 100vh;
+        justify-content: center;
+        display: grid;
+        position: fixed;
+    }
+
+
+    
+    #name-surname-section .text {
+
+        word-break: break-all;
+        width: 10px;
+        font-size: 3rem;
+        align-self: center;
+      
+        
+    }
+
+        /* about section */
+        #about {
+            margin-top: 0;
+        }
+
+        #about, #skills {
+            min-height: auto;
+        }
+
+        .project-article {
+            justify-content: flex-start;
+        }
+
+        .project-description {
+          line-height: 33px;
+        }
+
+
+    /* scroll svg pointer*/
+    .scroll-svg-pointer {
+        display: block;
+        position: absolute;
+        top: 640px;
+      }
+      
+      .mouse-bg {
+        position: absolute;
+        opacity: 1;
+        /* animation-delay: 15s;
+        animation-name: mouse-bg-animation;
+        animation-fill-mode: forwards; */
+      }
+      
+      .mouse-wheel {
+        position: absolute;
+        margin-left: 11px;
+        margin-top: 25px;
+        /* animation-name:mouse-wheel-animation;
+        animation-duration:3s; */
+        animation: mouse-wheel-animation 3s infinite;
+        /* animation-iteration-count: 5; 
+        opacity: 0; */
+      }
+      
+      .mouse-arrows-wrapper {
+        margin-left: 2px;
+      }
+      
+      .mouse-arrows-wrapper .mouse-arrow:nth-child(1) {
+        margin-top: 45px;
+        position: absolute;
+        animation:mouse-arrows-animation 3s infinite;
+        /* animation-iteration-count: 5; 
+        opacity: 0; */
+      
+      
+      }
+      
+      .mouse-arrows-wrapper .mouse-arrow:nth-child(2) {
+        margin-top: 60px; 
+        position: absolute;
+        animation:mouse-arrows-animation-2 3s infinite;
+        /* animation-iteration-count: 5; 
+        opacity: 0; */
+      
+      }
+      
+      /* .mouse-arrows-wrapper .mouse-arrow:nth-child(3) {
+        margin-top: 75px;
+        position: absolute;
+        animation:mouse-arrows-animation-3 2.5s ;
+        animation-iteration-count: 3;
+      } */
+      
+      
+      
+      /* mouse wheel animation */
+      @keyframes mouse-wheel-animation {
+        0% {opacity:0; margin-top: 15px;}
+        100% {opacity: 1; margin-top: 25px;}
+      }
+      
+      @keyframes mouse-arrows-animation {
+        0% {opacity:0;}
+       25% {opacity: 0;}
+       50% {opacity: 1;}
+      }
+      
+      @keyframes mouse-arrows-animation-2 {
+        0% {opacity:0;}
+       50% {opacity: 0;}
+       75% {opacity: 1;}
+      }
+      
+      /* @keyframes mouse-arrows-animation-3 {
+        0% {opacity:0;}
+       75% {opacity: 0;}
+       100% {opacity: 1;}
+      } */
+      
+        
+
+ }

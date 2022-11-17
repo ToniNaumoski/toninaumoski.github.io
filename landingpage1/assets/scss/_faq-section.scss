@@ -1,0 +1,30 @@
+.section-faq {
+    background-color: $color-sky-blue2;
+    padding-top: 100px;
+    padding-bottom: 320px;
+    &__section-faq {
+        background: #FFFFFF;
+        box-shadow: 40px 34px 44px rgba(0, 0, 0, 0.02);
+        border-radius: 41px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &-img-wrapper {
+        position: relative;
+        & img {
+            max-width: 100%;
+            padding-right: 0px;
+        }
+    }
+
+    &-content-wrapper {
+        padding-left: 20px;
+        &__text {
+            color: $color-orange-1;
+            font-weight: $font-weight-medium;
+            font-size: 21px;
+        }
+    }
+
+}
+

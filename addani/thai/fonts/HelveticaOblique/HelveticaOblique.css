@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'HelveticaOblique';
+    src: url('12756.eot');
+    src: url('12756.eot') format('embedded-opentype'),
+         url('12756.woff') format('woff'),
+         url('12756.ttf') format('truetype'),
+         url('12756.svg#HelveticaOblique') format('svg');
+}

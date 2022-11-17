@@ -1,0 +1,38 @@
+.custom-card {
+    box-shadow: none !important;
+    min-height: 100%;
+    & .p-card-title {
+        font-family: $font-family-primary;
+        font-weight: $font-weight-medium;
+        font-size: 27px;
+        min-height: 80px;
+    }
+
+    &__description {
+      font-size: 21px;
+      font-weight: $font-weight-normal;
+      color: $color-black;
+    }
+
+    &__text {
+      font-size: 18px;
+      font-weight: $font-weight-normal;
+      font-family: $font-family-primary;
+    }
+
+    &__info-location {
+      & .p-button {
+        margin: 0px 15px 15px 0px;
+        font-weight: $font-weight-medium;
+        font-size: 16px;
+      }
+    }
+
+    // second card style
+    &-2 {
+      &__text {
+        color: $color-black;
+        opacity: 0.5;
+      }
+    }
+}

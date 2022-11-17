@@ -1,0 +1,13 @@
+<h2>AKTIVIERUNG</h2>
+<form [formGroup]="activationForm" class="form-inline">
+  <div class="input-group mx-sm-3 mb-2">
+    <label class="sr-only" for="otp">Code (OTP)</label>
+    <input class="form-control" formControlName="otp" id="otp" placeholder="" type="text">
+    <div class="input-group-append">
+      <button (click)="activateAccount()" [disabled]="!activationForm.valid" class="btn btn-primary mb-2" type="submit">
+        <span *ngIf="activating" aria-hidden="true" class="spinner-border spinner-border-sm" role="status"></span>
+        Bestätige Email
+      </button>
+    </div>
+  </div>
+</form>

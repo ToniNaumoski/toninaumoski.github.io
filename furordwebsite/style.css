@@ -1,0 +1,309 @@
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body{ background:#000;
+	 border:0;
+	 font:11px Arial, Helvetica, sans-serif; color:#656464; text-transform:uppercase;
+	 line-height:17px;
+}
+
+
+/* ============================= main layout ====================== */
+
+a{ color:#fff; text-decoration: underline; outline:none}
+
+a:hover{ text-decoration: none}
+#page3 .main #content .wrapper.pad_bot2 .pad_left #flashwrapper #flashfile #FlashID {
+	padding-right: 111px;
+}
+#page3 .main #content .wrapper.pad_bot2 .pad_left #tekstfurordpekara {
+	padding-left: 250px;
+}
+#page3 .main #footer .wrapper .right a {
+	color: rgba(255,255,255,1);
+}
+#page3 .main #footer .wrapper #tonitekst {
+	padding-right: 350px;
+}
+
+#page3 .main #content .wrapper .pad_left.col1 h2 span #odnasatapekaratekst {
+	margin-left: 100px;
+}
+
+
+
+
+li{ list-style:none}
+#page3 .main #header .wrapper #logowrapper {
+	background-color: rgba(0,0,0,0.6);
+	height: 240px;
+	width: 965px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#page5 #header .wrapper #logowrapper {
+	background-color: rgba(0,0,0,0.6);
+}
+
+
+h1{ font:57px "Trebuchet MS", Arial, Helvetica, sans-serif; letter-spacing:-2px; font-weight: normal; line-height:60px; float:left; background: url(images/bg_logo.png) repeat;}
+h2{
+	font:41px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#fff;
+	font-weight:normal;
+	line-height:44px;
+	padding:28px 0 12px 0;
+	letter-spacing:-2px;
+	text-align: center;
+}
+h2 span{ font-size:21px; color:#6b6b6b; letter-spacing:-1px;}
+p{ padding-bottom:17px;}
+img{ vertical-align:top}
+/* ============================= header ====================== */
+#logo{ display:block; color:#fff; text-decoration:none; padding:40px 38px 14px 40px;}
+#page1 .main #header .wrapper #logowrapper #logo {
+	height: 400px;
+	width: 900px;
+}
+
+#logo span{ display: block; font:11px Arial, Helvetica, sans-serif; color:#a6a5a5; line-height:14px; letter-spacing:0; margin-top:-3px; padding-left:1px}
+.line{ height:30px; width:100%; overflow:hidden; font-size:0; line-height:0; background:url(images/bg_logo.png) repeat}
+#menu { width:100%; overflow:hidden; height:101px}
+#menu li { float:left;}
+#menu li a{ display:block; width:193px; font:20px "Trebuchet MS", Arial, Helvetica, sans-serif; text-align:center; font-weight:bold; letter-spacing:-1px; color:#fff; text-decoration:none; line-height:67px;}
+#menu li a:hover, #menu #menu_active a{ line-height:101px;}
+#menu .nav1 a{ background:#f55904}
+#menu .nav2 a{ background:#ff972d}
+#menu .nav3 a{ background:#ffc84a}
+#menu .nav4 a{ background:#aaad3f}
+#menu .nav5 a{ background:#2b6e3b}
+
+/* ============================= content ====================== */
+
+.pad_left{ padding-left:30px;}
+.pad_left2{ padding-left:35px;}
+.pad_bot1{ padding-bottom:22px;}
+.pad_bot2{
+	padding-bottom:30px;
+	padding-left: 40px;
+}
+
+.font1{ color:#fff}
+
+.button{ display:inline-block; color:#363c39; font:21px "Trebuchet MS", Arial, Helvetica, sans-serif; line-height:51px; padding:0 27px; text-decoration:none; background:#fff}
+.button:hover{ background:#000; color:#fff}
+
+.price{ margin-top:-3px;}
+.price li{ width:100%;overflow: hidden; vertical-align: top; line-height:23px;}
+.price span{ float:right; color:#fff;}
+.price a{ color:#656464; text-decoration:none; float:left;}
+.price a:hover{ color:#fff;}
+.price li strong{ display: block;overflow:hidden; background: url(images/price.gif) 0 -8px repeat-x; zoom:1}
+
+.box{ float:left; margin-right:15px; background:#fff; font:36px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#363c39;  line-height:38px; padding:8px 14px 14px 15px; margin-top:11px}
+.box span{ font-size:18px; line-height:20px; display:block; margin-top:-5px;}
+
+.news p{ padding-top:5px}
+/* ============================= footer ====================== */
+
+#footer { color:#fff; line-height:16px; padding:26px 30px 0 32px}
+#footer a{ text-decoration:none; color:#5b5b5b}
+#footer a:hover{ text-decoration:underline}
+
+.contact{ float:left; width:330px;}
+#footer .contact a{ color:#fff;}
+
+#footer_menu{ float:right; padding-bottom:48px}
+#footer_menu li{ float:left; padding-left:14px;}
+#footer #footer_menu .nav1 a{ color:#f55904;}
+#footer #footer_menu .nav2 a{ color:#ff972d;}
+#footer #footer_menu .nav3 a{ color:#ffc84a;}
+#footer #footer_menu .nav4 a{ color:#aaad3f;}
+#footer #footer_menu .nav5 a{ color:#4fac65;}
+
+#footer span{
+	width:400px;
+	text-align:right;
+}
+
+/* ============================= forms ============================= */
+
+#form_1{ line-height:31px; color:#fff; margin-top:4px; width:871px; overflow:hidden}
+#form_1 .input{ float:right; width:312px; height:13px; padding:9px 5px; font:11px Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase; background:#5b5b5b;}
+#form_1 p{ padding-bottom:8px;}
+.col_1{
+	width:420px;
+	float:left;
+	margin-bottom: 44px;
+} 
+.col_2{ width:431px; float:left; padding-left:20px;}
+#form_1 select{ width:104px; float:right; height:31px; padding:6px; background:#5b5b5b; margin-left:5px; font:11px Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase;}
+#form_1 .select{ width:149px; margin-right:180px}
+#form_1 textarea{ float:right; width:319px; height:92px; padding:9px 5px; font:11px Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase; background:#5b5b5b; overflow:auto}
+#form_1 a{ float:right; margin-left:9px; margin-top:22px;}
+
+#ContactForm {line-height:31px; color:#fff;width:871px; overflow:hidden; margin-top:4px;}
+#ContactForm p{ padding-bottom:8px;}
+#ContactForm a{ float:right; margin-left:19px; margin-top:23px;}
+#ContactForm .input {float:right; width:328px; height:13px; padding:9px 5px; font:11px Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase; background:#5b5b5b;}
+#ContactForm textarea { float:right; width:355px; height:131px; padding:9px 5px; font:11px Arial, Helvetica, sans-serif; color:#fff; text-transform:uppercase; background:#5b5b5b; overflow:auto}
+
+/*==========================================*/
+
+.bgstretcher {
+	background: black;
+	overflow: hidden;
+	width: 100%;
+	position: fixed !important;
+	z-index: 1;
+}
+.bgstretcher, .bgstretcher UL, .bgstretcher UL LI {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+.bgstretcher UL, .bgstretcher UL LI {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#page1 #header #footer .wrapper .right {
+	padding-right: 350px;
+}
+#page2 .main #header .wrapper #logowrapper {
+	height: 240px;
+	width: 965px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(0,0,0,0.6);
+}
+#page2 .main #footer .wrapper .right a {
+	color: rgba(255,255,255,1);
+}
+#page2 .main #content .wrapper #slika1wrapper {
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+#page2 .main #content .wrapper .wrapper #slika2wrapper {
+}
+#page5 #header .wrapper #logowrapperpage4 {
+	height: 250px;
+	width: 965px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(0,0,0,0.6);
+}
+#page5 #header .wrapper #logowrapperpage4 #logopage4 {
+	height: 200px;
+	width: 965px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px;
+}
+
+
+
+#page4 .main #header .wrapper #logowrapper {
+	height: 250px;
+	width: 965px;
+	background-color: rgba(0,0,0,0.6);
+	margin-right: auto;
+	margin-left: auto;
+}
+#page4 .main #content .wrapper .pad_left.col1 h2 span #nasetomeni {
+	margin-left: 55px;
+}
+#page4 .main #content .wrapper.pad_bot2 .pad_left #meni {
+	margin-left: 400px;
+}
+#page4 .main #content #meni {
+	margin-left: 420px;
+}
+#page4 .main #content #flashmeni {
+	margin-left: 180px;
+	margin-bottom: 60px;
+}
+#page4 .main #content .wrapper.pad_bot2 .pad_left #flashmeni {
+	margin-left: 400px;
+}
+#page6 .main #contentwrapper #tekstwrapper {
+	float: right;
+}
+#page6 .main #contentwrapper #slikawrapper #tekstwrapper #pekaratekst {
+	padding-top: 40px;
+}
+
+#page2 .main #flashzafuter {
+	background-color: rgba(0,0,0,0.8);
+	height: 90px;
+	width: 965px;
+}
+#page3 .main #flashfoter2strana {
+	background-color: rgba(0,0,0,0.8);
+	height: 90px;
+	width: 965px;
+	padding-top: 40px;
+}
+#page4 #content #flashfooter3strana {
+	background-color: rgba(0,0,0,0.8);
+	height: 90px;
+	width: 965px;
+	padding-top: 40px;
+}
+#page4 #content #flashfooter3strana #FlashID2 {
+	margin-left: 120px;
+}
+#page5 .main #content .wrapper .pad_left.col1.news #TEKSTGALERIJA {
+	margin-left: 300px;
+	width: 965px;
+}
+#page5 .main #header #content .wrapper .pad_left.col1.news #flashanimacija #FlashID {
+	background-color: rgba(255,255,255,1);
+}
+
+#page6 .main #header .wrapper #logoweapper {
+	background-color: rgba(0,0,0,0.6);
+}
+#page5 .main #content .wrapper .pad_left.col1.news #FlashID {
+}
+#page5 .main #content .wrapper .pad_left.col1.news #flashbaner #FlashID2 {
+	margin-left: 80px;
+}
+#page6 .main #content .wrapper .pad_left.col1 #kontaktinformacii {
+	float: right;
+}
+#page6 .main #contentwrapper {
+	width: 965px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(0,0,0,0.6);
+	background-image: url(images/bg_content.png);
+	height: 600px;
+}
+#page6 .main #contentwrapper #slikawrapper {
+	padding: 5px;
+	float: left;
+	width: 430px;
+}
+#page6 .main #contentwrapper #slikawrapper #tekstwrapper h3 {
+	text-align: center;
+	padding-top: 40px;
+}
+#page6 .main #contentwrapper #slikawrapper #tekstwrapper h6 {
+	padding-top: 40px;
+}
+#page6 .main #contentwrapper #slikawrapper img {
+	float: left;
+}
+#page5 .main #content .wrapper .pad_left.col1.news #flash wrapper {
+	padding-top: 44px;
+}

@@ -1,0 +1,13 @@
+.priese-section {
+    background-color: $color-sky-blue2;
+    padding-top: 100px;
+    &__content-container {
+        background: #FFFFFF;
+box-shadow: 40px 34px 44px rgba(0, 0, 0, 0.02);
+border-radius: 41px;
+    }
+
+    &__border-top {
+        border-top: 1px solid rgba($color: $color-black, $alpha: 0.1);
+    }
+}

@@ -1,0 +1,80 @@
+.aktuell-section {
+    width: 100%;
+    overflow: hidden;
+    &-content {
+        position: relative;
+        padding-top: 200px;
+    }
+
+    @media (min-width: 0px) {
+        &-content {
+        &-bg-img-left {
+            background: url(/assets/aktuell-bg-img-left.svg) no-repeat;
+            display: block;
+            background-size: 565px 442.15px;
+            height: 442.15px;
+            width: 565px;
+            position: absolute;
+            left: -285px;
+            top: 44px;  
+            &::before {
+                display: block;
+                content:"";
+                background: url("~/assets/aktuell-bg-img-left-2.svg") no-repeat;
+                background-size: 104.53px 52.27px;
+                height: 52.27px;
+                width: 104.53px;
+                position: absolute;
+                top: -30px;
+                left: 285px;
+            }        
+        }
+            &-bg-img-right {
+                background: url(/assets/aktuell-bg-img-right.svg) no-repeat;
+                display: block;
+                background-size: 565px 442.15px;
+                height: 442.15px;
+                width: 565px;
+                position: absolute;
+                right: -216px;
+                top: -38px;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        &-content {
+            &-bg-img-left {
+                background: url(/assets/aktuell-bg-img-left.svg) no-repeat;
+                display: block;
+                background-size: 565px 442.15px;
+                height: 442.15px;
+                width: 565px;
+                position: absolute;
+                left: -327px;
+                top: 44px;  
+                &::before {
+                    display: block;
+                    content:"";
+                    background: url("~/assets/aktuell-bg-img-left-2.svg") no-repeat;
+                    background-size: 104.53px 52.27px;
+                    height: 52.27px;
+                    width: 104.53px;
+                    position: absolute;
+                    top: -30px;
+                    left: 285px;
+                }        
+            }
+            &-bg-img-right {
+                background: url(/assets/aktuell-bg-img-right.svg) no-repeat;
+                display: block;
+                background-size: 565px 442.15px;
+                height: 442.15px;
+                width: 565px;
+                position: absolute;
+                right: -173px;
+                top: -38px;
+            }
+        }
+    }
+}

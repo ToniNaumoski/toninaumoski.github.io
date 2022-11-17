@@ -1,0 +1,33 @@
+<section class="steps steps__step-two">
+  <div class="container">
+    <div class="p-grid ">
+      <div class="p-col-12">
+        <p-steps [model]="items" [(activeIndex)]="activeIndex" [readonly]="true"></p-steps>
+
+        <form [formGroup]="identificationForm" class="p-d-flex p-jc-center p-mt-5">
+          <label>Haben Sie bereits ein PacknMoov Konto?</label>
+          <label *ngFor="let v of yesNo">
+            <span *ngIf="v; else no">Ja</span>
+            <input (change)="changeIdentificationType($event)" [checked]="v" [value]="v" name="hasAccount1"
+              type="radio">
+          </label>
+          <br />
+          <!--  <button (click)="callNextComponent()" [disabled]="!identificationForm.valid" class="btn btn-primary" routerLink="/announcement/identification">
+        <span *ngIf="loading" aria-hidden="true" class="spinner-border spinner-border-sm" role="status"></span>
+        Weiter
+      </button>-->
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div *ngIf="hasAccount==1; else registration">
+  <app-login></app-login>
+</div>
+
+<ng-template #registration>
+  <app-registration></app-registration>
+</ng-template>
+
+<ng-template #no>Nein</ng-template>

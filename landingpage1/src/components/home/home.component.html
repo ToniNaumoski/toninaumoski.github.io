@@ -1,0 +1,54 @@
+<app-header></app-header>
+<app-carousel></app-carousel>
+<app-aktuell [cardOneData]="cards"></app-aktuell>
+<app-subscribe></app-subscribe>
+<app-priese [cardTwoData]="cardsPriese"></app-priese>
+<app-customers></app-customers>
+<app-faq></app-faq>
+<app-kontakt></app-kontakt>
+<app-footer></app-footer>
+<!-- <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/"><img alt="" src="assets/logo.png"></a>
+    <button class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/">Dienstleitungen</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Preisrechner</a>
+        </li>
+        <li class="nav-item" *ngIf="!isUserLoggedIn()">
+          <button class="nav-link btn-light btn-secondary" routerLink="/register">Registrierung</button>
+        </li>
+        <li class="nav-item" *ngIf="!isUserLoggedIn()">
+          <button class="nav-link btn-light btn-primary" routerLink="/account/login">Anmeldung</button>
+        </li>
+        <li class="nav-item" *ngIf="isUserLoggedIn()">
+          <button class="nav-link btn-light btn-primary" (click)="logout()" >Ausloggen</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="carousel slide" data-ride="carousel" id="slides">
+  <ul class="carousel-indicators">
+    <li data-slide-to="0" data-target="#slides"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img alt="" src="assets/background.png">
+      <div class="carousel-caption ">
+        <h1 class="display-2">PacknMoov</h1>
+        <h3>Ihr zuverlässiger und moderner Umzugsvermittler</h3>
+        <button class="btn btn-outline-light btn-lg" routerLink="/announcement" type="button">
+          Anzeige veröffentlichen
+        </button>
+      </div>
+    </div>
+  </div>
+</div> -->

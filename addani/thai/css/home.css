@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+#header {
+	clear: both;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header #header-left {
+	float: left;
+	height: 110px;
+	width: 594px;
+	background-color: rgb(255,255,255);
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#header #header-left #logo-div {
+	padding-top: 15px;
+	margin-left: 3px;
+}
+#header #header-right {
+	float: right;
+	height: 110px;
+	width: 366px;
+}
+#header #header-menu {
+	clear: both;
+	height: 30px;
+	width: 960px;
+	background-color: rgb(0,0,0);
+	margin: 0px;
+}
+#header #header-menu #menu-ul {
+	list-style-type: none;
+}
+#header #header-menu #menu-ul li {
+	float: left;
+	text-decoration: none;
+	margin-top: 5px;
+}
+#header #header-menu #menu-ul li a {
+	color: rgb(255,255,255);
+	margin-left: 10px;
+	font-weight: normal;
+}
+#header #header-banner {
+	height: 50px;
+	width: 940px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: thin solid rgb(51,51,51);
+	margin-left: 9px;
+}
+#header #header-slider-left {
+	clear: both;
+	height: 700px;
+	width: 600px;
+	float: left;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header #header-baner-right {
+	float: right;
+	height: 600px;
+	width: 360px;
+	background-color: rgb(51,51,51);
+	margin-top: 10px;
+}
+
+#header #header-baner-right #clickhere {
+	margin-left: 10px;
+}

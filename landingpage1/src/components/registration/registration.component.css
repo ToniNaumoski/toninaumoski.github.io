@@ -1,0 +1,10 @@
+/*input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}*/
+small.ng-invalid.ng-touched {
+  color: red;
+}
+
+.form-text .text-muted {
+  color: red;
+}

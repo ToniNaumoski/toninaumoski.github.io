@@ -1,0 +1,101 @@
+.footer {
+    background: #202224 0% 0% no-repeat padding-box;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    color: #FFFFFF;
+    font-family: $font-family--secondary;
+
+
+    &__content-left__logo-img {
+        margin-bottom: 24px;
+        display: flex;
+    }
+
+    &__content-left__text {
+        font-weight: $font-weight--regular;
+        font-size: $font-size--14;
+     
+    }
+
+    &__content-right-contact-text {
+        font-weight: $font-weight--bold;
+        font-size: $font-size--16;
+    }
+
+    &__content-right-phone-number-text {
+        font-weight: $font-weight--regular;
+        font-size: $font-size--14; 
+        opacity: 0.8;
+    }
+
+    &__content-right-social-media-wrapper {
+        margin-bottom: 50px;
+    }
+
+    &__content-right-social-media-img {
+        margin-left: 20px;
+    }
+
+    &__content-right-cookie-text-wrapper {
+        & span {
+            margin-left: 20px;
+            font-size: $font-size--13;
+            font-weight: $font-weight--regular;
+        }
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) {  
+    .footer {
+
+        &__content-left__logo-img {
+            margin-left: auto;
+        }
+
+        &__content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__content-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .footer {
+        
+        &__content-left__logo-img {
+            margin-left: 0;
+        }
+
+        &__content-wrapper {
+            flex-direction: row;
+        }
+
+        &__content-right {
+            align-items: flex-end;
+        }
+
+        &__content-right-contact-text {
+            margin-right: 75px;
+        }
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+}

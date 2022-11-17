@@ -1,0 +1,23 @@
+/*--- import varialbes ---*/
+@import "variables.css"; 
+
+/*--- import fonts  ---*/
+@import "fonts.css";
+
+/*--- import main styles ---*/
+@import "style.css"; 
+
+/*--- import mobile-small media query ---*/
+@import "mobile.small.css"; 
+
+/*--- import mobile media query ---*/
+@import "mobile.css"; 
+
+/*--- import tablet media query ---*/
+@import "tablet.css"; 
+
+/*--- import desktop media query ---*/
+@import "desktop-small.css"; 
+
+/*--- import desktop media query ---*/
+@import "desktop-large.css"; 

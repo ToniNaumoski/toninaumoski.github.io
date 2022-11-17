@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+// headings
+h2 {
+    font-size: 60px;
+    font-weight: $font-weight-bold;
+    color: $color-dark-blue-2;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin: auto;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: $font-weight-bold;
+}
+
+// sections title text
+.section-title-text {
+    color: $color-gray-2;
+    font-weight: $font-weight-medium;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    margin: auto;
+}
+
+// form label
+.form__label {
+    font-weight: $font-weight-bold;
+    font-size: 24px;
+    color: $color-black;
+}

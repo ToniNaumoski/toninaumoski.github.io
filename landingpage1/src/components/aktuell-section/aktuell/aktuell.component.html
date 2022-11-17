@@ -1,0 +1,23 @@
+<div class="aktuell-section">
+
+    <div class="container">
+        <div class="p-grid">
+            <div class="p-col-12 aktuell-section-content">
+                <div class="aktuell-section-content-bg-img-right"></div>
+                <div class="aktuell-section-content-bg-img-left"></div>
+                <h2>Aktuell</h2>
+                <p class="section-title-text">
+                    All the available jobs in the market will show here and user can click view more to see All job list from here!
+                </p>
+                <button pButton type="button" label="Kostenlose Registrierung" class="p-d-flex p-mx-auto p-mt-5 p-mb-5"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="p-grid ">
+            <div class="p-col-12 p-lg-4" *ngFor="let card of cardOneData;">
+                <app-card [cardOneData]="card"></app-card>
+            </div>
+        </div>
+    </div>
+</div>

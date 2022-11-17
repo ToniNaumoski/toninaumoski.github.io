@@ -1,0 +1,31 @@
+.search-section {
+    background-color: $color-sky-blue2;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    &-wrapper {
+        background-color: $color-white;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    &-input-icon-left-wrapper {
+        width: 100%;
+     
+
+        .p-inputtext {
+            height: 65px;
+            padding-left: 40px !important;
+            width: 100%;
+            background-color: $color-white-2;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            min-width: 1200px;
+        }
+    }
+}

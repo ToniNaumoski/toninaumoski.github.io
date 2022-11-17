@@ -1,0 +1,29 @@
+.cost-component {
+    background-color: $color-sky-blue1;
+    &__main-section {
+        background-color: $color-white;
+        margin-bottom: 200px;
+        border-radius: 10px;
+        margin-top: 400px;
+        &-img {
+            width: 458px;
+            height: 458px;
+            margin-top: -200px;
+            margin-left: 58px;
+        }
+
+        &-title {
+            font-weight: $font-weight-bold;
+            font-size: 48px;
+            color: $color-dark-blue3;
+            margin:0;
+            padding: 0;
+        }
+
+        &-text {
+            font-weight: $font-weight-medium;
+            font-size: 21px;
+            color: rgba($color: $color-black, $alpha: 0.5);
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<section *ngIf="carouselPage == ''" class="carousel-section p-pt-6">
+    <div class="container p-pb-0">
+        <p-carousel [value]="carouselItems" [circular]="true" [autoplayInterval]="5000" [style]="{'width':'100%'}" [numVisible]="1"
+            [numScroll]="1" [responsiveOptions]="responsiveOptions">
+            <ng-template let-item pTemplate="item">
+                <div class="p-d-flex p-flex-column p-flex-lg-row">
+                    <div class="p-d-flex p-jc-center p-flex-column carousel-section-content-wrapper">
+                        <h1 class="carousel-section-title">{{item.title}}</h1>
+                        <div class="carousel-section-text">{{item.text}}</div>
+                        <div class="p-inputgroup p-inputgroup-custom p-jc-start">
+                            <button pButton type="button" [label]="item.buttonLabel" [routerLink]="item.buttonSrc"
+                                class="p-inputgroup-custom-btn"></button>
+                            <span class="p-inputgroup-addon p-button p-component p-inputgroup-custom-btn-arrow-icon p-button-secondary">
+                                <i class="pi pi-chevron-right p-inputgroup-custom-btn-arrow-icon-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="carousel-section-img-wrapper">
+                        <img class="carousel-section-img" [src]="item.imgSrc" alt="carousel-img" />
+                        <span class="carousel-section-img-line"></span>
+                    </div>
+                </div>
+
+            </ng-template>
+        </p-carousel>
+    </div>
+</section>
+
+<p-carousel *ngIf="carouselPage == 'faq'" [value]="carouselItems" [circular]="true" [autoplayInterval]="5000" [style]="{'width':'100%'}" [numVisible]="1"
+    [numScroll]="1" [responsiveOptions]="responsiveOptions" class="carousel-section__carousel-faq">
+    <ng-template let-item pTemplate="item">
+        <span class="line"></span>
+            <div class="carousel-section-img-wrapper">
+                <div class="section-faq-img-wrapper p-d-flex">
+                    <img src="assets/faq-img.png" alt="faq-img" />
+                </div>
+            </div>
+    </ng-template>
+</p-carousel>

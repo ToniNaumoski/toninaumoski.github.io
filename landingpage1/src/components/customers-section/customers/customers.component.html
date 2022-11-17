@@ -1,0 +1,28 @@
+<section class="customers-section">
+    <div class="container p-mb-5">
+        <div class="p-grid">
+            <div class="p-col-12">
+                <h2>What Our Customers Have To Say</h2>
+                <p class="section-title-text">Looking for inspiration?  We’ve put together a huge collection of fun 
+                    and educational classroom ideas to</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <p-carousel [value]="customersData" styleClass="custom-carousel" [numVisible]="3" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+        <ng-template let-customersData pTemplate="item">
+            <div class="customers-section__item-wrapper p-d-flex p-flex-column p-mr-3 p-pl-3 p-pt-3 p-pb-3">
+                <div class="customers-section__item-img-text-section p-d-flex">
+                    <img class="customers-section__item-img-text-section-img" [src]="customersData.imgSrc" alt="customers-img"/>
+                    <div class="p-d-flex p-flex-column">
+                        <p class="customers-section__item-img-text-section-title p-pl-3">{{customersData.title}}</p>
+                        <p class="customers-section__item-img-text-section-description p-pl-3">{{customersData.description}}</p>
+                    </div>
+                </div>
+                <p class="customers-section__item-text">{{customersData.text}}</p>
+                <p-rating [ngModel]="customersData.starsNotActive" readonly="true" [stars]="customersData.starsActive" [cancel]="false"></p-rating>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>
+</section>

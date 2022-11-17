@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Skyer';
+    src: url('Skyer-Regular.eot');
+    src: url('Skyer-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Skyer-Regular.woff2') format('woff2'),
+        url('Skyer-Regular.woff') format('woff'),
+        url('Skyer-Regular.ttf') format('truetype'),
+        url('Skyer-Regular.svg#Skyer-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

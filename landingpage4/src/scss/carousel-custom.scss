@@ -1,0 +1,157 @@
+.carousel-section {
+    font-family: $font-family--primary;
+    padding-top: 60px;
+    background-color: #F6F7F8;
+    overflow-x: hidden;
+
+    &__title {
+        color: #2F3740;
+        text-align: center;
+        margin-bottom: 35px;
+        &-medium {
+            font-weight: $font-weight--medium;
+            color: #0FA184;
+        }
+    }
+
+    
+    .carousel--custom {
+        margin: auto;
+        margin-top: 10  0px;
+        margin-bottom: 0px;
+
+        & .carousel-item {
+            height: 430px;
+        }
+
+        & .carousel-control-next{
+            margin-right: -20%;
+
+            & .carousel-control-next-icon {
+                background: url(./../assets/icn_arrow_right.svg);
+                width: 19px;
+                height: 31px;
+                margin-top: -150px;
+
+            }
+        }
+
+        & .carousel-control-prev {
+            margin-left: -20%;
+            & .carousel-control-prev-icon {
+                background: url(./../assets/icn_arrow_left.svg);
+                width: 19px;
+                height: 31px;
+                margin-top: -150px;
+            }
+        }
+
+        & .carousel-indicators li {
+            border-radius: 50%;
+            height: 12px;
+            width: 12px;
+            background-color: #0FA184;
+        }
+
+    & .carousel-caption {
+        left: auto;
+        right: auto;
+    }
+
+        h4 {
+            color: #4E4E4E;
+            font-size: 16px;
+            font-style: italic;
+            font-family: $font-family--primary;
+        }
+
+        p {
+            color: #0FA184;
+            font-size: 16px;
+            font-family: $font-family--primary;
+            color: #0FA184;
+            font-style: italic;
+            font-weight: 700;
+        }
+
+    }
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) {  
+    .carousel-section {
+        .carousel--custom {
+
+            & .carousel-inner {
+                & img {
+                    margin: auto;
+                }
+            }
+
+            & .carousel-control-next{
+                display: none;
+            }    
+
+            & .carousel-control-prev{
+                display: none;
+            }    
+        }    
+    }
+
+  }
+  
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) {  
+    .carousel-section {
+        .carousel--custom {
+            width: 540px;
+            margin: auto;
+            margin-top: 10  0px;
+            margin-bottom: 0px;
+
+            & .carousel-inner {
+                & img {
+                    height: 250px;
+                    margin: auto;
+                    max-width: 450px;
+                }
+            }
+
+            & .carousel-control-next{
+                margin-right: -20%;
+                display: flex;
+                & .carousel-control-next-icon {
+                    background: url(./../assets/icn_arrow_right.svg);
+                    width: 19px;
+                    height: 31px;
+                    margin-top: -150px;
+    
+                }
+            }
+            
+            & .carousel-control-prev {
+                margin-left: -20%;
+                display: flex;
+                & .carousel-control-prev-icon {
+                    background: url(./../assets/icn_arrow_left.svg);
+                    width: 19px;
+                    height: 31px;
+                    margin-top: -150px;
+                }
+            }
+
+        }    
+    }
+}
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+
+}
