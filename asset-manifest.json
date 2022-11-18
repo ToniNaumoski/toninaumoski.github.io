@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.9ed4b0e3.css",
-    "main.js": "/static/js/main.81dd0f86.js",
+    "main.js": "/static/js/main.457a851b.js",
     "static/js/787.c09d15d4.chunk.js": "/static/js/787.c09d15d4.chunk.js",
     "static/media/figmaPortdolio.jpg": "/static/media/figmaPortdolio.a74d14182c03d407942e.jpg",
+    "static/media/packandmove-full-image.png": "/static/media/packandmove-full-image.36550cc7786d66b99625.png",
     "static/media/figmaPortdolio-small-img.psd": "/static/media/figmaPortdolio-small-img.5d6d1a284cd2deafcd56.psd",
     "static/media/website-design-2.jpg": "/static/media/website-design-2.e8cdb6135410390abd8d.jpg",
     "static/media/website-design-3.jpg": "/static/media/website-design-3.20533e6577ff828c6c24.jpg",
@@ -43,11 +44,11 @@
     "static/media/Screenshot_1.jpg": "/static/media/Screenshot_1.eee9a1494f3fc8b48ab3.jpg",
     "index.html": "/index.html",
     "main.9ed4b0e3.css.map": "/static/css/main.9ed4b0e3.css.map",
-    "main.81dd0f86.js.map": "/static/js/main.81dd0f86.js.map",
+    "main.457a851b.js.map": "/static/js/main.457a851b.js.map",
     "787.c09d15d4.chunk.js.map": "/static/js/787.c09d15d4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ed4b0e3.css",
-    "static/js/main.81dd0f86.js"
+    "static/js/main.457a851b.js"
   ]
 }
